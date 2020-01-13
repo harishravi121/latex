@@ -1,0 +1,56 @@
+\documentclass[a4paper]{article}
+
+%% Language and font encodings
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+
+%% Sets page size and margins
+\usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+%% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\title{Charging a battery with a solar panel}
+\author{Harish Ravi}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+If we have N solar panels in series and we have a battery to charge, all we need to do would be to add a diode in series with the n-junction to the anode of the battery to prevent night losses. The current voltage characteristics and the power current characteristics are shown in the figures.
+
+\end{abstract}
+
+\section{Intro}
+The current through the extra diode would be $I=I0(exp^{(v1-vs)/Vt}-1)$,  $I=Is-I0(exp^{v1/nVt}-1)$, where
+$Is=Power/eh\eta\nu$, solving these two simultaneously gives the correct current at the correct power. The thing to be noted is that we don't need special electronics to manage the circuit the power being feeble. When there is no light, there would be no charging and when there is light there is charging. The protection diode prevents current flow from the battery. This should also allow interaction with other charge handling circuits where the current would simply add if there is another power source.
+\begin{figure}
+\centering
+\includegraphics[width=0.4\columnwidth]{hi.jpg}
+\caption{\label{fig:Lorenz}Schematic}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.7\columnwidth]{solarpowercurrent.png}
+\caption{\label{fig:Lorenz}Power versus current}
+\end{figure}
+
+
+\begin{figure}
+\centering
+\includegraphics[width=0.7\columnwidth]{currentbatvoltage.png}
+\caption{\label{fig:Lorenz}Current versus voltage}
+\end{figure}
+
+This would have application in battery car power maintainance.
+
+\section{Charging with a large solar panel}
+If we use a power conserver to match the power at the input and the output and save the loss from a 7805, where $I=Is-I0(exp^{V/nVt}-1)=P_{opt}/V$, where the exponentially falling down intersects with the hyperbolically falling down to give a power reading very close to the optimal power point. This would have extensive applications in cellphone charging with a large solar panel 
+
+
+\end{document}
