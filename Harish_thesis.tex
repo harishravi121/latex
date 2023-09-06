@@ -1,0 +1,1335 @@
+% This document describes how to use iiscthesis style
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentstyle[12pt,amsmath,textcomp,graphicx,caption,float]{iiscthes}
+
+\pagestyle{bfheadings}
+
+
+% Put your macros here
+%\newfont{\punkbx}{punkbx20}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% The frontmatter environment for everything that comes with roman numbering
+\begin{frontmatter}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Everything is optional in the front matter.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                         THE TITLEPAGE                              %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{EXPERIMENTS ON THE D2 LINE OF CESIUM WITH A DIODE LASER SYSTEM}
+\author{Harish Ravi}
+% For all the parameters below, take default values
+\submitdate{May 2017}
+\dept{Department of Physics}
+\sciencefaculty
+%\degreein{Computer Science and Engineering}
+
+%\me
+\iisclogotrue % Default is false
+% \figurespagefalse %default is true
+ %default is false
+\maketitle
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                              COPYRIGHT                             %
+% Copyright is automatically included by the style file              %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                              DEDICATION                            %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{dedication}
+% You can design this page as you like
+\begin{center}
+TO \\[2em]
+\large\it My parents, family and friends\\
+for\\
+\large\it their support.
+\end{center}
+\end{dedication}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                         ACKNOWLEDGEMENTS                           %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\prefacesection{Declaration}
+I, hereby declare that the work reported in this thesis has been carried out in the Department of Physics, Indian Institute of Science, under the supervision of Prof. Vasant Natarajan. I also declare that this work has not formed the basis for the award of any Degree, Diploma, Fellowship, Associateship or similar title of any University or Institution.
+ \\
+ \\
+ \\
+ \\
+Harish ravi\\
+Department of Physics\\
+Indian Institute of Science\\
+Bangalore 560012, Karnataka, India
+
+
+\acknowledgements
+
+I am really thankful to my guide Prof. Vasant Natarajan for helping me navigate through my Phd. He gave me an opportunity to work on problems which were challenging. I really felt at home in his lab which had cutting edge facilities. 
+
+I am thankful to Prof. Ummal Momeen for guiding me on the NMOR and EDM projects. I am extremely thankful to Prof. Mikhail Balabas for providing us the paraffin coated cells for our experiments. I am thankful to Prof. Venkatraman for lending us the motorized polarization rotation stage for the Hanle experiments.
+
+I am thankful to my seniors Alok, Ranjita, Ketan and Apurba and Vineet for helping me transition into the lab and for teaching me the basics. I am thankful to my colleagues Sumanta, Pushpender, Dipankar, and Zuala for always being supportive and helpful. I am thankful to Sherif, the drive behind the physics department workshop and the suryagen members Santosh and Nadeem for helping us in machining. Finally I am thankful to my team mates Mangesh and Abhilash who made measurement of one of the most challenging quantities in physics appear fun. I am also thankful to my labmates Subrahmaniam, Roshan and Nikhil who have helped me at various stages in the project. I am extremely thankful to Raghuveer sir, the lab assistant who has been instrumental in the smooth functioning of the lab.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%               PUBLICATIONS BASED ON THIS THESIS                    %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\publications
+
+\begin{enumerate}
+\item ``Permanent EDM measurement in Cs using nonlinear magneto-optic rotation," \\
+\textbf{Harish Ravi}, Mangesh Bhattarai, Abhilash Y D, Ummal Momeen and Vasant Natarajan, Asian Journal of Physics, vol 25(9) (2015).
+
+
+	\item ``Polarization dependent tuning of the Hanle effect in the ground state of Cs," 
+	\textbf{Harish Ravi}, Mangesh Bhattarai,Vineet Bharti and Vasant Natarajan.(Manuscript submitted in Europhysics Letters)
+	\item ``Finding number density of Caesium by studying the transmission spectrum,"\\
+	\textbf{Harish Ravi}, Mangesh Bhattarai and Vasant Natarajan. (Manuscript accepted in Science and Culture)
+
+\item ``Chopped nonlinear magneto-optic rotation: A technique for precision measurements," 
+\textbf{Harish Ravishankar}, S.R. Chanu and Vasant Natarajan, Europhysics Letters, vol. 94(5), 53002 (2011).
+
+\item ``Measuring the linewidth of a stabilized diode laser," \\
+Lal Muanzuala, \textbf{Harish Ravi}, Karthik Sylvan and Vasant Natarajan, Current Science,  vol. 109(4), pp. 765-767 (2015).
+\end{enumerate}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                              ABSTRACT                              %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{abstract}
+\sl
+We give a brief introduction to atomic physics and the motivation behind our experiments in the first chapter. The electron's electric dipole moment is an interesting quantity which is yet to be measured. In the 3rd Chapter, we use the technique of chopped nonlinear magneto-optic rotation (NMOR) in a room temperature Cs vapor cell to measure the permanent electric dipole moment (EDM) in the atom. The cell has paraffin coating on the walls to increase the relaxation time. The signature of the EDM is a shift in the Larmor precession frequency correlated with the application of an E field. We analyze errors in the technique, and show that the main source of systematic error is the appearance of a longitudinal magnetic field when an electric field is applied. This error can be eliminated by doing measurements on the two ground hyperfine levels. Using an E field of 2.6 kV/cm, we place an upper limit on the electron EDM of $ 2.9 \times 10^{-22} $ e-cm with 95\% confidence. This limit can be increased by 7 orders-of-magnitude---and brought below the current best experimental value. We give future directions for how this may be achieved. In chapter 4, we examine the Hanle effect for linear and circularly polarized light for different ground states and we find opposite behavior in the transmission signal. In one case, it shifts from enhanced transmission to enhanced absorption and vice-versa in the other case. 
+In Chapter 5, we study the transmission spectrum at different temperatures and device a way to find the number density. We then verify the Clausius-Clapyron equation and also find the Latent heat of Vaporization of Cesium. Finally, we wrap up with conclusions and future directions.
+
+\end{abstract}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                              CONTENTS                              %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\makecontents
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                              KEYWORDS                              %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\keywords
+{\large\bf{
+Electric Dipole Moment (EDM), Non-linear Magneto optic rotation (NMOR), Faraday effect, Atomic precession, Optical-pumping, Lasers, Number density, Temperature control.
+}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                     NOTATION AND ABBREVIATIONS                     %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\notations
+EDM Electric dipole moment\\
+NMOR Non linear Magneto optic rotation\\
+CPT	Charge, parity, time \\
+AOM Acousto-Optic Modulator \\
+DAC Digital to analog converter\\
+ADC Analog to digital converter\\
+DAQ Data Aquisition\\
+COSy COmpact Saturation absorption spectroscopy\\
+MIT Magnetically Induced Transperancy\\
+MIA Magnetically Induced Absorption
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{frontmatter}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Introduction}
+
+Atomic physics provides an excellent testing ground for quantum physics. One can calculate the electronic structure and measure the transition lines to verify the theory. In this dissertation, the primary focus is to measure the electron's electric dipole moment based on the magneto optic properties of the atom. We employ the Faraday effect to measure the same. If light resonant to an atomic transition were to pass through an atomic vapor, it shows the Faraday effect, ie, a magnetic field would cause the plane of polarization of light to rotate. This can be used for precision magnetometry. We extend it to measure the electric dipole moment of the electron as described in the dissertation. We suggest some innovative methods to eliminate systematics. Some of the challenges faced include applying high electric fields without causing breakdown of the air.
+
+The presence of a permanent electric dipole moment (EDM) for an atom signifies parity and time-reversal symettry violation\cite{PUR50}. The parity operator reverses the dipole moment while the total angular momentum remains the same. This violates the Wigner-Eckart theorem which states that any vector must always point along the total angular momentum of the system. The time reversal operator reverses the angular momentum while the dipole moment remains the same. This again violates the Wigner-Eckart theorem.
+
+
+\begin{figure}[H]
+\centering
+	\includegraphics[width=.7 \textwidth]{figures/Parityviolation.eps}
+	\caption{\label{fig:Parityviolation}Parity violation.}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.7 \textwidth]{figures/timeviolation.eps}
+\caption{\label{fig:Timeviolation}Time reversal symmetry violation.}
+\end{figure}
+
+Hence, the presence of an intrinsic Electric Dipole Moment (EDM) signifies parity and time reversal symmetry violation\cite{LAN57}. As the observation of time reversal symmetries has not been achived in Leptons, it would be very unique to discover an EDM for an electron. The value of the EDM predicted for the electron by the standard model is about 10 orders below the current experimental limits. However, theories beyond the standard model like super-symmetry, etc predict values which are within the experimental reach. Thus, experimental limits on the EDM constrain parameters of these theories and help in verifying them ultimately.
+
+The intrinsic electric dipole moment of the electron $d_e$ is enhanced by a factor $\eta$ in heavy paramagnetic atoms due to relativistic effects \cite{SCH63,SAL64}. The best limit in an atomic system is in a beam of Tl atoms \cite{RCS02} and the limit is $|d_e| \leq 1.6 \times 10^{-27}$ e-cm. This experiment is limited by the systematic error arising due to motional magnetic field $\vec{E} \times \vec{v}/c^2 $. Molecules on the other hand have large enhancement factors and an experiment using the YbF molecule has resulted in a limit on the electron EDM of $|d_e| \leq 1.05 \times 10^{-27}$ e-cm \cite{HKS11}. There has also been a proposal to increase the precision using laser-cooled YbF molecules launched in a fountain \cite{TSH13}. The measurement on ThO molecules at the ACME collaboration have resulted in the best limits so far of  $|d_e| \leq 8.9 \times 10^{-29}$ e-cm \cite{ACME14}.
+
+In the 4th chapter, we study the Hanle effect in detail. Hanle effect is the change in absorption or transmission characteristic upon the application of a magnetic field.  We match experimental simulation to theory. The motivation behind this is to build a device in which the transmission can be controlled by an external magnetic field.
+
+In the 5th chapter, we present an experimental technique to make an accurate estimate of the number density. The basic idea is to use the percentage absorption through a vapor cell and the detailed Doppler broadened absorption curve. The asymmetric lineshape is explained by absorption by the open transitions which require the transit-time relaxation rate to be considered to calculate absorption. We measure number density at various temperatures and infer the latent heat of vaporization of Cesium.
+
+We use precision controlled extended cavity diode lasers for probing the atomic vapor, Labview based data acquisition systems for data collection and Matlab for data analysis.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Experimental Setup}
+
+The experimental setup in general consists of a Toptica DL pro laser operating at 852 nm D$_2$ line of Cs (6S$_{1/2} \rightarrow $ 6P$_{3/2}$ transition). The output is fiber coupled to a polarization maintaining 95/5 splitter. The 5\% arm goes into a Toptica compact saturation absorption spectroscopy(COSy) unit which enables us to view the hyperfine peaks. We can then lock into one of the peaks to stabilize the laser wavelength to a known transition. Lockin is achieved by modulating the current of the laser and demodulating the photo diode difference signal with a digital lockin amplifier to obtain the error signal. The remaining 95\% of the laser output (after the power splitter) is coupled to free space using a fiber coupler. The beam size after the coupler ($1/e^2$ diameter) is 3 mm.
+
+\section{Experimental setup for EDM measurement}
+
+The laser is locked to the  $ 4 \rightarrow (4,5) $ crossover peak , which is about 125.5 MHz below the $ 4 \rightarrow 5 $ hyperfine transition. An AOM is used to chop the beam by on-off modulating the AOM driver. It also upshifts the frequency by 125.5 MHz so that the laser frequency matches the $4\rightarrow 5 $ hyperfine transition. Controlling the RF power helps us to control the laser power. The frequency of the AOM is controlled by a function generator (HP8656 B). The time base of the function generator is set using a commercial Rb atomic clock (SIM 940) operating at 10 MHz with $10^{-12}$ relative stability. The chopping is done by controlling an RF switch with an external function generator (SRS DS345) at about 200 Hz. The time base of this function generator is also set using the same Rb atomic clock. Chopping is done within about 200 Hz preferably so that we may use the sync filter for quicker response times on the SRS lock-in amplifier.
+
+The power of the laser beam is set to 100 \textmu W and the beam goes through a spherical vapor cell of 75 mm diameter with paraffin coating on the walls. The paraffin coating prevents relaxation of the coherence upon wall collisions. The coherence is preserved for more than thousands of collisions resulting in milliseconds of relaxation times in our system. Minute long relaxation rates have been achieved in a special alkene coated cell in Ref.\ \cite{BKL10}. The cell is enclosed in a 3-layer magnetic shield (Magnetic Shield Corp, USA) with a shielding factor of better than $10^4$. The longitudinal magnetic field required is applied using a longitudinal solenoid. The coil is wound around a hollow acrylic cylinder of diameter 190 mm and is made of about 1800 turns of 0.35 mm diameter wire wound over a length of 640 mm. The current through the solenoid is controlled by simply applying a voltage through a resistor. The voltage is set using a 24 bit NI DAQ card with a dynamic range of $-3.5$ to $+3.5$ $V$. The voltage is scanned in required steps in this dynamic range. 
+
+When the laser beam passes through the cell, in the presence of a magnetic field, its polarization gets rotated due to Non-linear Magneto Optic Rotation (NMOR). The output beam passes through a Wollaston prism which splits the beam corresponding to two perpendicular polarizations. The polarization in-front of the prism is adjusted using a half ($\lambda/2$) waveplate such that the two components of polarization have equal intensities (balanced) after the prism. When the polarization of light rotates, one can show that the difference in intensities is proportional to the angle of rotation \cite{BGK02}. Thus, we feed the intensity of the two polarizations into the A and B input ports of the SR 830 lock-in amplifier and use the difference signal A-B as input. The out-of-phase output from the lock-in amplifier is the signal which is used in the experiment. It can be shown that the out-of-phase signal shows a lorentzian peak when the chopping frequency is twice the Larmor precession frequency. The out-of-phase signal is aquired with the same NI=DAQ card which was used for setting the voltage on the solenoid. The resolution of the aquisition system is 24 bit with a dynamic range of $-10$ to $10$ $V$.
+
+
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.8\textwidth]{figures/edm_setup.eps}
+\caption{Schematic of the experiment for EDM measurement. Figure key: PM fiber -- polarization maintaining fiber; AOM -- acousto-optic modulator; $\lambda/2 $ -- half-wave retardation plate; WP -- Wollaston prism; PD -- photodiode.}
+\label{fig:edm_setup}
+\end{figure}
+
+\section{Experimental Setup for Hanle Measurement}
+
+The output from the fiber coupler goes into a Glan-Taylor prism which is used to control the laser power (with a half-wave plate) and it also makes the polarization linear (as the extinction ratio for the orthogonal polarization is better than $10^5$). The ellipticity of the beam is then controlled with a quater wave plate. It is typically changed from linear to circular.
+
+Just like the EDM experiment, the laser beam again goes into a spherical Cs vapor cell of diameter 75 mm with paraffin coating on the walls. The difference here is that there is no AOM and only one photodiode is used to detect the absorption signal. The cell is enclosed in the center of a 3-layered magnetic shield with a shielding factor of better than $10^4$. The setup to apply the longitudinal field is the same as in the EDM experiment.
+
+\begin{figure*}[ht]
+	\centering
+	\includegraphics[width=0.75\textwidth]{figures/Hanleexpt.eps}
+	\caption{Schematic of the experiment. Figure key: PM fiber -- polarization-maintaining fiber; $\lambda /2$ -- half-wave retardation plate; GT prism -- Glan-Taylor prism; $\lambda /4$ -- quarter-wave retardation plate; PD -- photodiode.}
+	\label{fig:Hanleexpt}
+\end{figure*}
+
+\section{Experiemental setup for finding number density}
+
+In this experiment, only the COSy is used for finding the Doppler broadened absorption curve and saturation absorption spectrum. The laser frequency is varied over about a GHz by scanning the piezo voltage. The data is acquired on a computer interfaced by RS232 through the Toptica software. The cell is of length 25 mm inside the COSy.
+	
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.8\textwidth]{figures/expsetup.eps}
+	\caption{\label{fig:expsetup}Schematic of the experiment.}
+\end{figure}
+
+\chapter{NMOR and EDM Measurement}
+
+When resonant light passes through an atomic vapor, it exhibits strong rotation in the plane of polarization upon the application of a magnetic field Ref.\ \cite{BGK02}. As we describe in our work in Ref.\ \cite{RCN11}, when light is on-off modulated (with a technique called chopped-NMOR), there is a peak in the out-of-phase component of the lock-in output when the modulation frequency equals twice the Larmor precession frequency. The on-off modulation is done using an AOM and thus, the response is almost instantaneous. We don't have to set a phase shift in the lock-in amplifier to get the correct signal. However, the traditionally used frequency modulated (FM) NMOR has the drawback that the phase in the lock-in amplifier varies with frequency due to the response characteristic of the piezo. Thus, one would never be sure of the phase in the old method. The errors due to motional magnetic field also don't play a role because the average velocity of the atoms in a vapor cell is zero. Thus, with our technique we can accurately measure the Larmor frequency and this is required to measure an EDM as a small shift in Larmor frequency is predicted to occur in the presence of an electric field due to an EDM. In Cs, the atomic EDM is enhanced as compared to the electron EDM by a factor of 120.53 due to relativistic effects as shown in Ref.\ \cite{NSD08}.
+
+\section{Theoretical Analysis}
+
+In the chopped-NMOR technique, during the on-time, the atom gets pumped into $\Delta m =2$ coherences of the ground state and the atom is said to be aligned. During the off time, the atoms precess at the Larmor precession frequency $\omega_L$. When the chopping frequency is equal to twice (due to two fold symmetry) the Larmor precession frequency, the NMOR effect is amplified due to resonance. The theory is explained in Ref.\ \cite{RCN11}. From the Wigner-Eckart theorem, we can say that the magnetic moment $\vec{\mu}$ and electric dipole moment $\vec{d}$ have to point along the total angular momentum vector $\vec{F}$. Thus, the total energy in the presence of an electric and magnetic field can be written as,
+
+\begin{equation}
+U = \left(d\vec{E} + \mu \vec{B}\right) \cdot \frac{\vec{F}}{F}
+\end{equation}
+
+Due to the greater strength of the magnetic potential energy, the quantization axis is along the direction of the magnetic field. The Larmor precession frequency is given by the energy spacing between two magnetic sub levels such that $\Delta m =1$. Thus, in the absence of an electric field, the Larmor precession frequency is given by,
+
+\begin{equation}
+\omega_L = (g_F \mu_B B)/\hbar
+\end{equation}
+where $g_F$ is the Land\'e $g$ factor of the magnetic sub level and $\mu_B$ is a constant called the Bohr magneton. If an electric field in the same direction of the magnetic field is switched on, we obtain that the Larmor precession frequency changes to 
+\begin{equation}
+\omega_L = (g_F \mu_B B + d_e \eta E)/\hbar
+\end{equation}
+where $d_e$ is the permanent EDM of the electron and $\eta $ is the EDM enhancement factor in the atom. 
+Thus, if an atom has an EDM, the Larmor precession frequency changes upon application of an electric field.
+
+In the chopped-NMOR experiment, the chopping frequency ($f$) is kept constant while the magnetic field is scanned. Without an electric field, we get two peaks in the out-of-phase component of the NMOR signal, one at a positive value of the magnetic field $B_+$ and one at a negative value of magnetic field $-B_-$. The value of the two resonant magnetic fields are given by the equations below.
+\begin{equation}
+hf=2g_F\mu_BB_+
+\end{equation}
+and similarly,
+\begin{equation}
+hf=|-2g_F\mu_BB_-|
+\end{equation}
+Thus, we obtain $B_+=B_-$. Thus, the peaks are expected to occur at equal values on the left and right of the origin. When an electric field is applied, since the chopping frequency is the same, the peaks move as follows,
+%and 
+\begin{equation*}
+\begin{aligned}
+hf &= 2g_F \mu_B B_+^E + 2d_e \eta E  \\
+\implies B_+^E &= \dfrac{hf - 2d_e \eta E}{2g_F \mu_B} 
+\end{aligned}
+\end{equation*}
+%and
+\begin{equation*}
+\begin{aligned}
+hf &= \left| -2g_F \mu_B B_-^E + 2d_e \eta E \right| \\
+\implies B_-^E &= \dfrac{hf + 2d_e \eta E}{2g_F \mu_B}
+\end{aligned}
+\end{equation*}
+using the fact that the E term is much smaller than the B term. 
+
+As the quantization axis is set by the magnetic field and is in opposite directions for the two cases, the contribution from the electric field is of different signs for the two cases.
+
+\subsection{Separation and center of peaks}
+
+From the above expressions, the separation of the peaks is found to be,
+\begin{equation}
+\begin{aligned}
+S_{\rm no \, E} &= B_+ + B_- = \frac{hf}{\mu_B B} \\
+S_{\rm with \, E} &= B_+^E + B_-^E = \frac{hf}{\mu_B B} = S_{\rm no \, E}
+\end{aligned}
+\end{equation}
+and the corresponding centers are 
+\begin{equation*}
+\begin{aligned}
+C_{\rm no \, E} &= \dfrac{1}{2} \left[B_+ - B_-\right] = 0  \\
+C_{\rm with \, E} &= \dfrac{1}{2} \left[ B_+^E - B_-^E \right] = - \dfrac{2d_e\eta E}{g_F \mu_B}
+\end{aligned}
+\end{equation*}
+Thus the EDM signal appears as a change in the center of the two peaks proportional to the E field. The separation between the peaks however remains as a constant when an electric field is applied or not.
+
+\subsection{Effect of stray B fields}
+In order to understand this effect, let us assume that there is a stray magnetic field with a longitudinal component $B_{\ell}$ and a transverse component $B_t$. As the atom precesses about the total magnetic field, we get that the peak locations are given by,
+\begin{equation*}
+hf = 2g_F \mu_B \left[\sqrt{ \left( B_+ + B_{\ell} \right)^2 + B_t^2} \right]
+\end{equation*}
+\begin{equation*}
+hf = 2g_F \mu_B \left[\sqrt{(B_- - B_{\ell})^2 + B_t^2}\right]
+\end{equation*}
+Thus the peak separation changes to 
+\begin{equation*}
+S^{\rm stray} = 2\sqrt{\left(\dfrac{hf}{2g_F \mu_B}\right)^2 - B_t^2}
+\end{equation*}
+which shows a parabolic behaviour with respect to the transverse longitudinal field.
+The center between the two peaks is
+\begin{equation*}
+C^{\rm stray} = -B_{\ell}
+\end{equation*}
+which is equal to the longitudinal field and independent of the transverse field. 
+
+We conduct a simple experiment monitoring the separation between the peaks and the center of the peaks as a function of the transverse field. We then get a parabolic behavior as expected for the peak separation as borne out in Fig.~\ref{fig:septran}.
+
+\begin{figure}
+	\centering
+	\includegraphics[width= 0.6\textwidth]{figures/septran2.eps}
+	\caption{Separation between peaks versus transverse magnetic field.}
+	\label{fig:septran}
+\end{figure}
+
+
+\begin{figure}
+	\centering
+	\includegraphics[width= 0.6\textwidth]{figures/centran2.eps}
+	\caption{Center  between peaks versus transverse magnetic field.}
+	\label{fig:centran}
+\end{figure}
+
+
+
+ From Fig.~\ref{fig:centran}, there is a very small dependence of the center between the peaks as a function of the transverse magnetic field. We think that this could be due to a small tilt in the transverse coils of the order of a degree (from the linear fit).
+
+Thus, a stray magnetic field will cause both the separation and center of the peaks to change, but only the longitudinal component will mimic the EDM signal.
+
+\section{Error analysis}
+
+\subsection{Statistical errors}
+Statistical errors arise due to the following.
+\begin{enumerate}
+	\item Error in curve-fitting done with Matlab. This is due to the finite linewidth ($\delta \omega$)and is of the order of $\delta \omega/SNR$ where $SNR$ is the signal to noise ratio.
+	
+	\item Jitter in the function generator used for driving the AOM which leads to variation in the chopping frequency and thus a shift in the peak location. This is minimized by using the 10 MHz signal from Rb atomic clock as a time base.
+	
+	\item Errors in the voltage applied to the solenoid coil used for scanning the B field from the NI-DAQ card. This is minimized by choosing a high resolution (24 bit) and high stability voltage source.
+	
+	\item Magnetic field fluctuation arising due to movement of heavy metallic objects. A constant magnetic field has no effect as the shifts are same with and without an electric field and the value gets canceled. 
+	
+\end{enumerate}
+
+The statistical errors average down as $1/\sqrt{n}$ where $n$ is the number of measurements. We can keep taking more data to reduce the error until we reach the level of systematic errors.
+
+\subsection{Systematic errors}
+The main source of systematic error will be the appearance of a \textbf{longitudinal} magnetic field correlated with  the application of the electric field. The small current passing radially through the teflon insulation into the solenoid will generate such a field. There is a way of canceling this systematic effect by measuring with the other ground state $F_g=3$. The Land\'e $g$ factor values for the two ground states are equal and opposite. As shown previously, the peak shifts in the presence of an electric field by a value
+
+\begin{equation*}
+\Delta C = - \dfrac{2 d_e \eta E}{g_F \mu_B} - B_\ell
+\end{equation*}
+where $B_\ell$ is the longitudinal field which arises due to leakage currents upon application of the electric field. The shift due to the EDM signal will be opposite due to the two ground levels $F_g=3$ and $F_g=4$ as the $ g_F $ values are $-1/4$ and $+1/4$ respectively. Thus, subtracting the two shifts in center would eliminate the leakage currents and thus remove the systematics in the experiment.Thus, the 2nd ground state acts as a co-magnetometer like the use of Rb atoms along with Cs atoms as we demonstrated in Ref.\ \cite{RCN11} and proposed by others for EDM measurement \cite{CLV01}.
+
+\section{Experimental results}
+
+In the experimental setup, the plates were 35 mm thick with rounded semi-torroidal edges. During the experiment many chopped-NMOR curves like that shown in Fig.\ \ref{fig:nmor} were acquired. The voltage applied to the solenoid and a series resistor  is scanned from $ -2 $ to $ +3.5 $ V in variable steps. More points were taken near the peaks to improve the accuracy of the measurement. The asymetry is due to a residual longitudinal magnetic field. However, since this is constant, it doens't interfere with the EDM measurement. The scan range was divided into 70 steps and the measurement was done a 1000 times in 1 second at each step. The curve from each scan is fit to two Lorentzian peaks along with a linear baseline. The process is repeated 18 times and from each curve fit, we obtain the center pf the curve fit which is averaged over the 18 values. Thus, without the electric field we obtain a value $ C_{\rm no \, E} $ and by repeating the same process with an electric field, we obtain, $ C_{\rm with \, E} $. The difference of the average values of the center $ \Delta C = C_{\rm with \, E} - C_{\rm no \, E} $ with and without an electric field yields the EDM value as follows
+
+\begin{equation*}
+d_E = \dfrac{g_F \mu_B}{2 \eta E} \, \Delta C
+\end{equation*}
+The values for our case are $ g_F = +1/4 $, $ \eta = 120.53$, and $ E = 2.6 $ kV/cm
+
+\begin{figure}
+\centering
+\includegraphics[width=0.6\textwidth]{figures/nmor234.eps}
+\caption{NMOR Curve}
+\label{fig:nmor}
+\end{figure}
+
+The first set of measurement comprised of measurements of $ d_E $ a total of 50 times. The average value and standard deviation yields
+\begin{equation}
+d_E = (0.3 \pm 1.3) \times 10^{-22} \, \text{e-cm}
+\end{equation}
+Since the standard deviation is more than 4 times the mean, we conclude that both statistical and systematic errors are under control at this level of precision. From this, we put an upper limit on the electron EDM of 
+\begin{equation*}
+\lvert d_E \rvert \leq 2.9 \times 10^{-22} \, \text{e-cm}
+\end{equation*}
+with 95\% confidence. 
+
+The results of this chapter have been published in \cite{HMA16}.
+
+
+
+
+\chapter{Hanle measurement}
+
+
+The Hanle effect occurs due to optical pumping effects in the atom which leads to a change in transmission of a laser beam with applied magnetic field. The linewidths of these effects are only about 0.1 mG in all our cases. Simulations are done with the atomic density matrix package by Simon Rochester (http://rochesterscientific.com/ADM/). The interesting fact observed in the experiment is that the sign of peak reverses when we use linear as compared to circularly polarized light. The sign also reverses when we use the different ground states in Cs.
+
+
+\section{Theoretical analysis}
+We numerically solve the following time evolution equation for the density-matrix elements involved:
+\begin{equation}
+\frac{d\rho}{dt} = \frac{1}{i\hbar}[\rho,H] + \rm{relaxation \, and \, repopulation \, terms}
+\end{equation}
+The calculation takes as input---(i) the two $ F $ values for the transition, (ii) the light intensity, and (iii) the polarization ellipticity. Experimental parameters of incident power of 100 \textmu W in a size of 3 mm, a small transverse field of 0.1 mG, and an interaction length corresponding to the cell size of 75 mm were taken. The atomic number density was taken to be $ 3 \times 10^{10} $ atoms/cc, which corresponds to a vapor pressure of 1 \textmu torr (corresponding to Cs vapor at room temperature). The intensity was assumed to decay exponentially due to absorption along the beam path. 
+
+The simulation assumed two regions---labeled A and B---with different Hamiltonians, because both the light and magnetic field are present in region A while only the magnetic field is present in region B. The atoms relax from region A to region B (transit-time relaxation) at a rate of 50 kHz, which corresponds to the most-probable velocity going across the beam size of 3 mm. The atoms come back from region B to region A at a rate of 2 kHz, determined roughly by the ratio of cell volume to interaction volume. Finally, the relaxation rate at which coherences are lost (due to collisions with the cell wall) is taken to be 25 Hz, chosen to match the linewidth seen in a paraffin-coated vapor cell in our related NMOR experiments \cite{RCN11}. The spectrum is Doppler-averaged over the Maxwell-Boltzmann velocity distribution appropriate for Cs atoms at room temperature. The numerical package that we use allows for a realistic simulation with transit-time relaxation and wall-collision relaxation rates (which do not change with laser power, atomic number density, etc.), near saturation intensity, and Doppler averaging. 
+
+Magnetic sublevel structure for the two final transitions is shown in the figures below. In all cases, the quantization axis is along the polarization direction, i.e.\ perpendicular to the direction of propagation for linear polarization, and along the direction of propagation for circular polarization. The selection rule for sublevel transitions coupled by linear polarization is $ \Delta m = 0 $. Similarly, the selection rule for right circular polarization ($ \sigma^+ $) is $ \Delta m = +1 $, while the one for left circular polarization ($ \sigma^- $) is $ \Delta m = -1 $.
+
+\subsection{$ F_g = 3 \rightarrow F_e = 2 $ \rm {transition}}
+Using the above rules, we can see that the steady state population distribution (after optical pumping) for the $ 3 \rightarrow 2 $ transition will evolve from equal populations in all the sublevels to what is shown in Fig.\ \ref{fig:3to2populations}. With linear polarization, shown in part (a) of the figure, all the population ends up in the $ m_{F_g} = -3 $ and $ +3 $ sublevels. This is because there are no upper-state sublevels to which it can be excited. From the relative strengths of transitions coupled by this polarization (determined by the respective Clebsch-Gordan coefficients), all the population gets optically pumped to non-absorbing sublevels.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.5\textwidth]{figures/3to2populations.eps}
+	\caption{Magnetic sublevels of the $ 3 \rightarrow 2 $ transition in the $\rm D_2 $ line of $^{133}$Cs. The quantization axis is along the direction of polarization. Population distribution after optical pumping and relative strengths for transitions coupled by two kinds of polarizations are shown. (a) Linear. (b) Circular.}
+	\label{fig:3to2populations}
+\end{figure}
+
+Similarly, the distribution after optical pumping with right circular polarization, shown in part (b) of the figure, will end up in the $ m_{F_g} = +2 $ and the $+3$ sublevels. This is because as before there are no upper-state sublevels to which they can be excited. From the relative strengths of transitions, the population is again driven to non-absorbing sublevels. The same argument shows that $ \sigma^- $ light will optically pump atoms to non-absorbing $ m_{F_g} = -2 $ and $ -3 $ sublevels.
+
+One way to think about the effect of optical pumping is to consider that the light induces a magnetic moment in the direction of the quantization axis, which then precesses around a transverse magnetic field. This will result in redistribution of the population into absorbing states in the presence of such a transverse field. By definition, a longitudinal B field (as required in the Hanle effect) is transverse to linear polarization. However, the degree of population redistribution, and hence overall absorption, will increase as the value of the field is increased. This shows that the absorption will be minimum at $ B_{\ell} = 0 $, and the resonance peak in the Hanle effect will show MIT.
+
+Now we consider what happens with circular polarization. In this case, an additional transverse field is required because the induced moment is in the longitudinal direction. The transverse field will cause population redistribution into absorbing levels, but its effect will be progressively smaller as the magnitude of the longitudinal field is increased. This shows that the absorption will be maximum at $ B_{\ell} =0 $, and the resonance peak in the Hanle effect will show MIA.
+
+In order to see population redistribution in the presence of a B field transverse to the quantization axis, we show in Fig.~\ref{fig:F3circular} the populations in the various magnetic sublevels of the $F_g = 3 $ state as a function of B field. The curves are shown for circular polarization. The case of linear polarization (not shown) is similar, but complicated by the choice of quantization axis.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.75\textwidth]{figures/F3circular.eps}
+	\caption{Populations in the different magnetic sublevels of the $F_g = 3 $ ground state as a function of B field strength.}
+	\label{fig:F3circular}
+\end{figure}
+
+The results of the simulation, shown in Fig.\ \ref{fig:3to2sim}, are consistent with the qualitative discussion above. The most interesting thing to note is that it reproduces the observed transformation from MIT for linear polarization to MIA for circular polarization. The calculated linewidth is close to the experimental one. The simulation does not reproduce the percentage change in each case, mainly because the simplistic calculation does not take into account velocity-changing collisions, and assumes that the intensity is uniform across the beam.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.5\textwidth]{figures/3to2simb.eps}
+	\caption{Results of simulation for the $ 3 \rightarrow 2 $ transition showing transformation from MIT to MIA, exactly as seen in the experimental data.}
+	\label{fig:3to2sim}
+\end{figure}
+
+\subsection{$ F_g = 4 \rightarrow F_e = 5 $ \rm {transition}}
+We now consider magnetic sublevels of the $ 4 \rightarrow 5$ transition. The population distribution after optical pumping is shown in Fig.\ \ref{fig:4to5populations}. With linear polarization, shown in part (a) of the figure, maximum population is in the $ m_{F_g} = 0 $ sublevel, and reaches a minimum at the $ m_{F_g} = \pm 4 $ extreme sublevels. This is because the probability of decay from the corresponding upper-state sublevels has this kind of distribution. From the relative transition strengths shown in the figure, this population distribution is going to give maximum absorption. Similarly, optical pumping by right circular polarization ($ \sigma^+ $ light) will result in all the population ending up in the $ m_{F_g} = +4 $ sublevel. The relative transition strengths show that this sublevel is maximally absorbing, therefore as for the linear case absorption will be a maximum when the field is zero.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.5\textwidth]{figures/4to5populations.eps}
+	\caption{Magnetic sublevels of the $ 4 \rightarrow 5 $ transition in the $\rm D_2 $ line of $^{133}$Cs. The quantization axis is along the direction of polarization. Population distribution after optical pumping and relative strengths for transitions coupled by two kinds of polarizations are shown. (a) Linear. (b) Circular.}
+	\label{fig:4to5populations}
+\end{figure}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.5\textwidth]{figures/4to5simb.eps}
+	\caption{Results of simulation for the $ 4 \rightarrow 5 $ transition showing transformation from MIA to MIT, exactly as seen in the experimental data.}
+	\label{fig:4to5sim}
+\end{figure}
+
+In the presence of a field transverse to the quantization axis, the population distribution will change and hence the absorption will decrease. Our qualitative analysis proceeds as before. 
+\begin{enumerate}
+	\item For linear polarization, the longitudinal field used in the Hanle effect will result in progressively smaller absorption. Hence, absorption will be a maximum at $ B_{\ell} =0 $ and the resonance will show MIA.
+
+\item For circular polarization, a transverse field is required because the quantization axis is in the longitudinal direction. As discussed for the other transition, the effect of the transverse field will become progressively smaller as the magnitude of the longitudinal field is increased. Therefore, absorption will be minimum at $ B_{\ell} = 0 $, and the resonance peak will show MIT.
+\end{enumerate}
+
+The results of the simulation are shown in Fig.\ \ref{fig:4to5sim}. The results are consistent with the qualitative discussion given above. The detailed calculation reproduces MIT and MIA in each case, and the experimentally observed linewidth. Importantly, it reproduces the observation that the transformation from MIA to MIT is opposite to what was seen for the other transition. As before, the simulation does not reproduce the percentage change as seen in the experimental data, for the same reasons as discussed before.
+
+\section{Experimental results}
+
+${\rm^{133}Cs}$ has two values of the total angular momentum $ F $ in the ground state---3 and 4. Therefore there are two closed transitions in the $\rm D_2 $ line: $ 3 \rightarrow 2 $ and $ 4 \rightarrow 5 $.
+
+Experimental results for the Hanle effect on the $ 3 \rightarrow 2 $ transitions are shown in Fig.\ \ref{fig:3to2}. The resonance as the longitudinal B field is scanned is extremely narrow  because of the use of a paraffin-coated vapor cell. The resonance peak shows increased transmission (or MIT) for linear polarization, which transforms to reduced transmission (or MIA) for circular polarization. This implies that the medium can be tuned between \textit{slow} and \textit{fast} light simply by changing the polarization of the light, because the sign of the dispersion depends on whether absorption is enhanced or reduced \cite{BHN15}.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.5\textwidth]{figures/3to2_scaledb.eps}
+	\caption{Experimental results for the $3\rightarrow 2 $ transition. Transmission as a function of applied longitudinal B field shows transformation from MIT for linear polarization to MIA for circular polarization.}
+	\label{fig:3to2}
+\end{figure}
+
+The measured photodiode voltage is scaled to reflect the actual absorption through the cell. The scaled photodiode signal accurately reflects probe absorption, both off resonance (high magnetic fields), and the percentage change near resonance. It is seen that it is 10 times higher for the circular case compared to the linear one, which necessitates averaging over 100 traces for the linear case.
+
+The resonances are not centered at zero field because of the presence of a small residual B field inside the shield---both longitudinal and transverse. The longitudinal component causes a shift from zero. The transverse component is required for the circular polarization effect to work (as explained in the \textbf{theoretical analysis} section); this is different from other Hanle experiments where the transverse field is either unimportant or actively nulled. The linewidth obtained in both cases is about 0.1 mG, and is limited by spin relaxation processes. This is the linewidth obtained in a paraffin coated cell which increases by a factor of 100 in a normal cell.
+
+Experimental results for the corresponding closed transition starting from the upper ground level, namely $ 4 \rightarrow 5 $ are shown in Fig.\ \ref{fig:4to5}. As before, the percentage absorption for the linear case is much smaller and the curve is obtained after averaging over 100 traces. In addition, the resonances are not centered at zero field because of the presence of a residual longitudinal field.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.5\textwidth]{figures/4to5_scaledb.eps}
+	\caption{Experimental results for the $ 4\rightarrow 5 $ transition. Transmission as a function of applied longitudinal B field shows transformation from MIA for linear polarization to MIT for circular polarization.}
+	\label{fig:4to5}
+\end{figure}
+
+The results of this chapter have been submitted to Europhyiscs Letters.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Number density}
+
+Theoretical calculations of atomic transition linewidths  \cite{IFN09,CSB11,CHN13,CPB14} and strengths \cite{RTC98,MES99,FOO05} require precise knowledge of the number density of the vapor. While vapor pressure curves are available for most atoms \cite{STE03}, they are not sufficiently accurate to allow them to be used in such calculations. In addition, simplifying assumptions such as the vapor behaving as an ideal gas have to be made in order to relate the vapor pressure to a number density. Here, we demonstrate a way of extracting number density from the transmission spectrum.
+
+	
+\section{Theoretical analysis}
+	\subsection{Density-matrix analysis}
+	The absorption of an ideal two-level system is a standard problem discussed in many textbooks \cite{ALE75}. However, transitions in a real atom involve multiple hyperfine levels, which necessitates the use of a numerical density-matrix approach. Closed transitions---those that decay back to the same ground level---behave like two-level systems. On the other hand, open transitions can decay to a different ground level; this necessitates the use of a two-region model---one region where the laser beam is present and one where it is not---something which can be easily incorporated into any numerical package. As an example of the power of this technique, we consider hyperfine transitions in $\rm ^{133}Cs$. The relevant energy levels are shown in Fig.~\ref{levels_Cs}.  Numerical simulations were done using the atomic density-matrix (ADM) package for Mathematica developed by Simon Rochester. It solves numerically the time evolution of the density-matrix elements involved.
+	
+	We consider transitions starting from the two ground levels of $\rm ^{133}Cs$, namely $ F_g = 3 \rightarrow F_e $ and $ F_g = 4 \rightarrow F_e $, shown schematically in Fig.~\ref{levels_Cs}. In the former case, the $ F_g = 3 \rightarrow F_e = 2 $ transition is closed but it acts like an open system because the atoms get pumped into the extreme magnetic sublevels. For the latter case, only the $ F_g = 4 \rightarrow F_e = 5 $ transitions is closed, while the other two are open. In both cases, modeling of the open transitions requires the use of two regions, and with a relaxation rate to go into the other ground level---transit-time relaxation. The numerical package also allows us to incorporate a rate for atoms to come back to the correct ground level after wall collisions in the region outside the laser beam.
+	
+	\begin{figure}
+	\centering
+	\includegraphics[width=0.33\textwidth]{figures/levels_Cs.eps}
+	\caption{ Hyperfine levels in the $ \rm{D_2} $ line ($ \rm {6\,S_{1/2} \rightarrow 6\,P_{3/2}} $ transition) of $\rm{^{133}Cs} $ (not to scale).}
+	\label{levels_Cs}
+	\end{figure}
+	
+	\subsection{Latent heat of evaporation}
+	
+	The Clausius-Clapeyron equation allows us to extract the latent heat of evaporation of a gas by studying its vapor pressure at two temperatures. It is given by:
+	\begin{equation}
+	\ln \dfrac{p_1}{p_2} = - \dfrac{L}{R} \left(\dfrac{1}{T_1} - \dfrac{1}{T_2} \right)
+	\end{equation}
+	where $ p $ is the vapor pressure at temperature $ T $, $ L $ is the latent heat of evaporation, and $ R $ is the universal gas constant. At one temperature, the above equation simplifies to 
+	\begin{equation}
+	\ln (p) = - \dfrac{L}{R} \dfrac{1}{T} + C
+	\end{equation} 
+	where the constant $ C $ subsumes all the parameters related to temperature $ T_2 $. We now use the gas law to relate the pressure to the temperature as follows:
+	\begin{equation}
+	p = n k_B T
+	\end{equation}
+	where $ n $ is the number density and $ k_B $ is the Boltzmann constant. From this, we get
+	\begin{equation}
+	\label{nvsT}
+	\ln(nT) = - \dfrac{L}{R} \dfrac{1}{T} + {C^{\prime}}
+	\end{equation}
+	where $ {C^{\prime}} = C - \ln(k_B) $ is a new constant.
+
+\section{Experimental results}
+	
+	\subsection{$ F_g = 3 \rightarrow F_e $ transitions}
+	
+	We first consider results for transitions starting from the lower ground hyperfine level. Experimental results of a Doppler-broadened spectrum is shown in Fig.~\ref{3tox}. The frequency axis of the laser ($ x $-axis of the figure) is calibrated using separation between hyperfine peaks of a Doppler-corrected saturated-absorption spectrum (not shown). Also shown is the result of the simulation, which shows that it fits the experimental spectrum quite well. The simulation takes as input---(i) the value of $ F_g $, (ii) the light intensity, and (iii) the number density of atoms. It also assumes two regions---A where the laser beam is present, and B where the beam is not present.
+	
+	\begin{figure}
+	\centering
+	\includegraphics[width=0.5\textwidth]{figures/3toxb.eps}
+	\caption{Transmission spectrum of $ 3 \rightarrow F_e $ transitions. The calculated spectrum shows the good match with the experimental one, and is obtained with relaxation rates of  $ \gamma_A = 3 \times 10^5 $ s$^{-1}$, $ \gamma_B = 10^2 $ s$^{-1}$, and $ \gamma_w = 10^{10} $ s$^{-1}$.}
+	\label{3tox}
+	\end{figure}
+	
+	For open transitions, light in region A pumps atoms into the other $ F_g $ level, while in region B the $ F_g $ levels redistribute due to wall collisions. We assume the relaxation rates to be: $ \gamma_A $ for going from A to B, $ \gamma_B $ for coming back from B to A, and $ \gamma_w $ for redistribution due to wall collisions.
+	
+	The lineshape of the absorption spectrum  is asymmetric, with the right half behaving like a Gaussian and the left half showing a longer tail. While number density alone is sufficient to give the correct peak height and right half of the curve, relaxation rates $\gamma $'s are required to fit the left half of the curve. This half arises due to open transitions, which is one of the advantages of using a numerical package for the simulation---it allows both the use of a number density and relaxation rates in different regions.
+	
+	In the next experiment, the temperature of the CoSy vapor cell was varied and the absorption curve at different temperatures recorded. At each temperature, the curve was fit to a number density. The results of such a measurement are shown in Fig.~\ref{lh3tox}. The symbols are the measured values, while the solid line is a fit to Eq.~\eqref{nvsT}. It is interesting to see that the behavior follows the prediction of Eq.~\eqref{nvsT}. The fit yields a value for the latent heat of evaporation as 78(4) kg/mol. This is a rough value because there are many approximations that go into the deviation of the equation, but the value is comparable to that in other alkali atoms.
+	
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.5\textwidth]{figures/lh3toxb.eps}
+		\caption{ Variation of number density with temperature for $ 3 \rightarrow F_e $ transitions. The solid line is a fit to Eq.~\eqref{nvsT}, which yields a latent heat of 78(4) kJ/mol.}
+		\label{lh3tox}
+	\end{figure}
+	
+	\subsection{$ F_g = 4 \rightarrow F_e $ transitions}
+	
+	We now consider transitions starting from the upper ground level. We present results of absorption spectra---both experimental and calculated---in Fig.~\ref{4tox}. As in the previous case, experiment and theory match quite well, further validating the numerical package that we use.
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.5\textwidth]{figures/4toxb.eps}
+		\caption{Transmission spectrum of $ 4 \rightarrow F_e $ transitions. The calculated spectrum shows the good match with the experimental one, and is obtained with relaxation rates of  $ \gamma_A = 3 \times 10^5 $ s$^{-1}$, $ \gamma_B = 10^2 $ s$^{-1}$, and $ \gamma_w = 10^{10} $ s$^{-1}$.}
+		\label{4tox}
+	\end{figure}
+	
+	We also present results of variation in number density with temperature, measured in order to get the latent heat of evaporation. The results are presented in Fig.~\ref{lh4tox}. The solid line, which is a fit to Eq.~\eqref{nvsT} yields the latent heat as 86(7) kJ/mol. This value is consistent with the value obtained in the other case.
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.5\textwidth]{figures/lh4toxb.eps}
+		\caption{Variation of number density with temperature for $ 4 \rightarrow F_e $ transitions. The solid line is a fit to Eq.~\eqref{nvsT}, which yields a latent heat of 86(7) kJ/mol.}
+		\label{lh4tox}
+	\end{figure}
+\clearpage
+The results of this chapter have been accepted for publication in Science and Culture.
+
+\chapter{Conclusions and future directions}	
+	
+\section{Conclusions}
+
+To summarize the 3rd chapter,  we have demonstrated a new technique for the measurement of the electron EDM. The method uses chopped NMOR in a anti-relaxation coated Cs vapor cell at room temperature. We analyze errors in the technique, and show that the main source of systematic error can be eliminated by doing measurements on the two ground hyperfine levels.
+
+Using an E field of 2.6 kV/cm, we set a limit of $\lvert d_e \lvert \leq 2.9 \times 10^{-22}$ e-cm. The most precise limit comes from a measurement on the molecule ThO, which is about 6 orders-of-magnitude below our limit. However, there are easily implemented improvements to the technique that should enable us to reach a precision below this value.
+
+To summarize the 4th chapter, we have demonstrated that the Hanle effect can be tuned between enhanced absorption and enhanced transmission by changing the ellipticity of polarization of the input laser beam. The experiments are done using the two closed hyperfine transitions of the $\rm D_2 $ line of ${^{133}\rm Cs} $ : $F_g = 3 \rightarrow F_e = 2 $ and $ F_g = 4 \rightarrow F_e = 5 $. The former shows a transformation from MIT to MIA when the polarization is changed from linear to circular, while the latter shows transformation from MIA to MIT. The experiments gain by having paraffin coating on the walls of the vapor cell since it increases the relaxation time of coherences among magnetic sublevels. The linewidth obtained in such a cell is of order 0.1 mG, making the technique a good candidate for sensitive magnetometry. The experimental observations can be understood qualitatively based on optical pumping among the magnetic sublevels of the ground state. A detailed density-matrix calculation using the levels involved bears out the above qualitative explanation. This ability to tune the sign of the dispersion opens up new applications in areas such as slow light and quantum-information processing.
+
+To summarize the 5th chapter, we find that the simulated model explains the transmission spectrum for a gas of cesium cell. The simulated and experimental curves match very well and gave us a unique way of measuring the number density and estimating the transit time relaxation rate of an atomic system. From the number density measurements at various temperatures, we estimated the latent heat of vaporization of cesium while verifying the Clausius-Clapeyron equation
+
+\section{Future improvements}
+
+The following improvements in the technique will enable us to increase the precision of the measurement of EDM.
+\begin{enumerate}
+\item Better shield -- the current 3-layer shield has a shielding factor of $ 10^4 $. There is a 4-layer design described in Ref.\ \cite{BGK02}, which will improve the shielding by a factor of 100. This should give us a corresponding decrease in the linewidth, and hence the uncertainty in determining peak centers.
+
+\item Better cell -- The present cell has paraffin coating on the walls. We next plan to use a cell with alkene coating on the walls as described in Ref.\ \cite{BKL10}. This will increase the relaxation time by a factor of 100, and result in a correspondingly smaller linewidth.
+
+\item Higher E field -- The current field is limited by electrical breakdown of air at sharp points on the field plates. We expect to use a field that is 100 times larger by evacuating the entire assembly. The increased field will result in a direct improvement in the precision of the measurement.
+
+\item Longer time -- As mentioned before, each curve takes about a minute to complete. Therefore, the entire set of 1800 curves is completed in less than 1 day. This can easily be increased by a factor of 100, which should result in a increase in precision of a factor of 10.
+\end{enumerate}
+Together, the above improvements will result in a factor of $ 10^7 $ increase in precision, which will make the technique better than the best EDM measurements to date.
+
+As for the Hanle experiment, one could try a variation in the experiment with an added control. One could vary the ellipticity of the control beam with the probe ellipticity fixed and observe how the transmission spectrum which is plotted versus magnetic field changes as a function of the control beam ellipticity.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\appendix
+
+\chapter{Temperature controller for vapor cell (with Arduino code)}
+\section{Introduction}
+One of the primary issues faced while using a paraffin coated cell was that the quality of the coating would decay over time or when a very strong Electric field was applied. To repair this, one simply had to bake the cell at about $70^o$ C for about an hour while keeping the ampule cold. This would redistribute the paraffin leaving behind only a thin layer on the walls. We achieved this by designing a small box surrounded by a heating element with a hole at the bottom for the ampule. The box was kept on ice for keeping the ampule cold.
+
+A temperature control system was built using an Arduino for the heater element. The temperature was monitored using LM35 and the heater was controlled by a PWM controller. The PID values were tuned for best response time and overall stability. 
+
+\section{Experimental setup}
+
+The experimental setup consists of a Arduino micro based controller  as shown in Fig.~\ref{fig:controlschematic}. The controller senses the temperature using an LM35 temperature sensor and controls the PWM output to the heater tape around an aluminum can which contains the cell. The bottom lid has a small hole for the ampule which sits inside ice. 
+\begin{figure}
+	\centering
+	\includegraphics[width=0.6\textwidth]{figures/Controlsystem.eps}
+	\caption{\label{fig:controlschematic}Temperature control system schematic.}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.6\textwidth]{figures/controlsetupA.eps}
+	\caption{\label{fig:Trans111}The controller circuit.}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.6\textwidth]{figures/controlsetupB.eps}
+	\caption{\label{fig:Trans1111}The cell wrapped with heating tape.}
+\end{figure}
+
+
+\section{Temperature Response Curves}
+
+The arduino sends the temperature and power data every second throught the serial port which is monitored and plotted on a PC using Labview as shown in Fig.~\ref{fig:Tempresp}. The initial PID values were set using the Zeigler-Nicholas method and fine tuned later. The final code is shown in Appendix A. After fine tuning, the system takes about 1500 s to settle down to $70^o$ C
+\begin{figure}
+	\centering
+	\includegraphics[width=0.6\textwidth]{figures/Temperature.eps}
+	\caption{\label{fig:Tempresp} Plot showing temperature versus time.}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.6\textwidth]{figures/Power.eps}
+	\caption{\label{fig:Powresp} Plot showing the power versus time.}
+\end{figure}
+
+
+\section{Arduino code used for temperature control}
+
+\noindent \#include \textless PID\_v1.h \textgreater
+// initialize the library with the numbers of the interface pins from the above pin mappings\\
+double Temp = 26.0;\\
+int startflag=0;\\
+int timesecs=0;\\
+int stopflag=0;\\
+char Output2=0;\\
+//pid initializations\\
+double Setpoint=70.0;\\
+double Input, Output;\\
+//Specify the links and initial tuning parameters\\
+double gain = .25;\\
+double Kp=5.95*gain;\\
+double Ki=.024*gain;\\
+double Kd=35*gain;\\
+PID myPID(\&Temp, \&Output, \&Setpoint, Kp, Ki, Kd, DIRECT);\\
+double Temprobust(int samples)\{\\
+	unsigned int val=0;\\
+	double Temp1=0;\\
+	for(int m=0;m<samples;m++)\{\\
+		val += analogRead(2); // read the Temp value multiple times\\
+		for(unsigned int k2=0;k2\textless 32000;k2++); //delay\\
+	\}\\
+	Temp1=round(val*3300.0/1024/samples)/10.0;\\
+	return Temp1;\\
+\}\\
+
+
+\noindent void setup() \{\\
+	// set up the LCD's number of characters per line and lines: \\
+	Serial1.begin(9600);\\
+	Serial.begin(9600);\\
+	Serial1.print(30);\\
+	//analogReference(INTERNAL);  // Use the 1.1 V internal ref\\
+	//lcd.print("Temperature ");\\
+	TCCR1A=0;\\
+	TCCR1B=0;\\
+	TCNT1=0;\\
+	TIMSK1 \textbar =(1 \textless\textless TOIE1); // Enables timer overflow\\
+	Temp=Temprobust(100);\\
+	myPID.SetSampleTime(2096); //Sampletime\\
+	//turn the PID on\\
+	myPID.SetMode(AUTOMATIC);\\
+	TCCR1B\textbar=(1\textless\textless CS12);\\
+\}\\
+
+
+\noindent ISR(TIMER1\_OVF\_vect)\\
+\{\\
+	Temp=Temprobust(100);\\
+	if(stopflag==0)\{\\
+		myPID.Compute();\\
+		Output2=(char)round(Output);\\
+	\}\\
+	if(stopflag==1)\\
+	\{\\
+		Output=0;\\
+		Output2=(char)Output;\\
+	\}\\
+	Serial1.print(Output2);  // Output to the dimmer  \\
+	Serial.print(Temp);  //print temperature over USB\\
+	Serial.print("  ");\\
+	Serial.print(round(Output));\\
+	Serial.println(" ");\\
+	if(Temp\textless Setpoint)\\
+	\{startflag=1;\}\\
+	if(startflag==1)\\
+	\{timesecs+=2;\}\\
+	if(timesecs\textgreater 4000)\\
+	\{stopflag=1;\}\\
+\}\\
+
+\noindent void loop()\{\\
+	for(unsigned int k=0;k\textless 33254;k++);\\
+\}
+
+
+\chapter{Density-Matrix code}
+
+\section{Hanle Simulation For $F=4$ to $F'$}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\textless\textless AtomicDensityMatrix\`;\\
+SetOptions[DensityMatrix, TimeDependence \textgreater False, \\
+  ComplexExpandVariables -\textgreater Subscript];\\
+SetOptions[ListLinePlot, PlotRange -\textgreater All, ImageSize -\textgreater Medium, \\
+  Frame -\textgreater True];\\
+\{gstate, estate\} = AtomicTransition["Cs", "D2"];\\
+\{gQuantumNumbers, \\
+   eQuantumNumbers\} = \{AtomicData[\\
+    gstate, \{J, L, S, NuclearSpin, NaturalWidth, Energy\}],\\
+   AtomicData[estate, \{J, L, S, NuclearSpin\}]\};\\
+system = Sublevels\@\{\\
+    AtomicState[1, gQuantumNumbers], \\
+    AtomicState[2, Append[eQuantumNumbers, BranchingRatio[1] -\textgreater 1]]\\
+    \};\\
+Style[TableForm[\\
+   system = DeleteStates[system, StateLabel == 1 \&\& F == 3]], Small];\\
+Style[TableForm[\\
+   system = DeleteStates[system, StateLabel == 2 \&\& F == 3]], Small];\\
+Style[TableForm[\\
+   system = DeleteStates[system, StateLabel == 2 \&\& F == 4]], Small];\\
+Style[TableForm[\\
+   system = DeleteStates[system, StateLabel == 2 \&\& F == 2]],\\
+  Small];\\
+atomicData = Join[\\
+   AtomicData[gstate, StateLabel -\textgreater 1],\\
+   AtomicData[estate, \\
+    StateLabel -\textgreater 2], \{c -\textgreater SpeedOfLight, h -\textgreater \\
+     PlanckConstantReduced, $\epsilon_0$ -\textgreater VacuumPermittivity\}\\
+   ];\\
+MatrixForm[\\
+  h = Hamiltonian[system, \\
+    ElectricField -\textgreater \\
+     OpticalField[$\Omega$, $\Omega_R$ \\
+       ReducedME[1, \{Dipole, 1\}, 2], \{0, $\epsilon_{12}$\}, \\
+      PolarizationVector -\textgreater \{1, 0, 0 \}, \\
+      PropagationVector -\textgreater \{0, 0, 1\}], \\
+    MagneticField -\textgreater \{0, $\Omega_{L1}$/ \\
+       BohrMagneton, $\Omega_L$/BohrMagneton\}]]; \\
+(hrwa = RotatingWaveApproximation[system, \\
+      h, $\Omega$] . \{$\Omega$ -\rbrack Energy[2] + $\Delta$\}) // \\
+  MatrixForm; \\
+MatrixForm[ \\
+  relax = IntrinsicRelaxation[system] + \\
+    TransitRelaxation[system,$\Gamma$]];\\
+MatrixForm[\\
+  repop = OpticalRepopulation[system] + \\
+    TransitRepopulation[system, $\Gamma$]];\\
+Short[eqs = Flatten@LiouvilleEquation[system, hrwa, relax, repop], 25];\\
+vars = DMVariables[system];\\
+observables = \\
+  Observables[system, \\
+    Energy[2], $\Omega_R$/ \\
+     ReducedME[1, \{Dipole, 1\}, 2], \{0, $\epsilon_{12}$\}, \\
+    PolarizationVector -\textgreater \{1, 0, 0\}, PropagationVector -\textgreater \{0, 0, 1\} ] // \\
+    Together;\\
+
+dADM = ExpandDipoleRME[system, ReducedME[1, \{ Dipole, 1\}, 2]];\\
+dSI = Convert[\\
+   dADM Sqrt[$\hbar$ c\^ 3] Sqrt[4 $\epsilon_0$] /. atomicData, \\
+   Coulomb Meter];\\
+E0 = Convert[\\
+   Sqrt[2 Int (Milli Watt/Centimeter\^ 2)/(c $\epsilon_0$) /. \\
+     atomicData // N, Volt/Meter];\\
+rabi = $\Omega_R$ -\textgreater \\
+   Convert[E0 dSI/$\hbar$ /. atomicData, 1/Second]; \\
+larmor = $\Omega_L$ -\textgreater \\
+   Convert[b Gauss BohrMagneton/$\hbar$ /. atomicData, 1/Second];\\
+larmor1 = $\Omega_L1$ -\textgreater \\
+   Convert[b1 Gauss BohrMagneton/$\hbar$ /. atomicData, 1/Second];\\
+observables1 = \\
+  Convert[\#, \\
+     1]\& / \@ (observables[[All, \\
+        1]] c\^ 2 length (Centimeter) density (1/$Centimeter^3$) /. \\
+      atomicData /. rabi); \\
+Short[eqs1 = \\
+   eqs /. rabi /. larmor /. larmor1 /. atomicData /.\{Mega -\rbrack 10\^ 6, \\
+     Second -\rbrack 1 \}, 50]; \\
+arrays[params\_] := \{ \\
+  \{1, -1\} Reverse@CoefficientArrays[eqs1 /. params, vars], \\
+  CoefficientArrays[observables1 /. params, vars][[2]] \\
+  \}\\
+(*  LINEAR POLARIZATION *)\\
+deltah = -3.757885799;\\
+m = .133; R = 8.314; T1 = 294;\\
+$\sigma$ = Sqrt[R T1/m];\\
+v = Range[-250, 250];\\
+mag = Range[-2.5, 2.5, .1];\\
+delta2 = 0;\\
+$\lambda_1$ = 852  $10^{-9}$;\\
+absorp = mag 0;\\
+dlen = .2 (* cm*);\\
+absorp = mag 0;\\
+For[k1 = 1, k1 \textless= Length[v], k1++,\\
+ delta2 = v[[k1]]/$\lambda_1$[[1]];\\
+ params = \{Int -\textgreater .0005 (* mW/cm\^2 *),$\gamma$ -\textgreater .5 10\^2 (* 1/s *), \\
+   b -\textgreater d 10\^ -3 (* G *), length -\textgreater dlen (* cm *), \\
+   density -\textgreater 1. 10\^ 11 (* 1/ \\
+   cm\^ 3 *), $\Delta$ \textgreater((2 $\pi$ (deltah) 10\^9) + (2 $\pi$ \ \\
+(delta2)))(* GHz *), $\epsilon_{12}$ -\textgreater 0, b1 -\textgreater  .5 10\^-3\}; \\
+ \{eqarr, obsarr\} = arrays[params];\\
+   tab = Table[\{d, obsarr.LinearSolve \@\@ eqarr\}, \{d, -2.5, 2.5, 0.1\}];\\
+ absorp = \\
+  absorp + \\
+   tab[[All, 2]][[All, \\
+      1]]/(Sqrt[2 $\pi$ $\sigma$) Exp[-v[[k1]]\^2/$\sigma$\^ 2/2];\\
+ If[QuotientRemainder[k1, 100][[2]] == 0, Print[k1]]\\
+ ]\\
+length1 = 7.5; (* Total length*)\\
+finallin = Exp[absorp/dlen length1];\\
+ListLinePlot[Thread[\{mag, finallin\}]]\\
+Export["Field.dat", mag, "Table"]\\
+Export["LinearAbsorption45.dat", finallin, "Table"]\\
+(*  CIRCULAR POLARIZATION *)\\
+absorp = mag 0;\\
+For[k1 = 1, k1 \textless = Length[v], k1++,\\
+ delta2 = v[[k1]]$\lambda_1$[[1]];\\
+ params = \{Int -\textgreater .0005 (* mW/$cm^2$ *), $\gamma$ -\textgreater .5 $10^2$ (* 1/s *), \\
+   b -\textgreater d $10^3$ (* G *), length -\textgreater dlen (* cm *), \\
+   density -\textgreater 1. $10^11$ (* 1/ \\
+   cm\^3 *), $\Delta$ -\textgreater ((2 $\pi$ (deltah) 10\^9) + (2 $\pi$ \ \\
+(delta2)))(* GHz *), $\epsilon_{12}$ -\textgreater $\pi$/4, b1 -\textgreater  .5 $10^{-3}$ \} ;\\
+ \{eqarr, obsarr\} = arrays[params];\\
+   tab = Table[\{d, obsarr.LinearSolve @@ eqarr\}, \{d, -2.5, 2.5, 0.1\}];\\
+ absorp = 
+  absorp + tab[[All, 2]][[All, 
+      1]]/(Sqrt[2 $\pi$ $\sigma$]) Exp[-v[[k1]]\^ 2/$\sigma$ \^ 2/2];\\
+ If[QuotientRemainder[k1, 100][[2]] == 0, Print[k1]]\\ ]
+length1 = 7.5; (* Total length*)\\
+finalcir = Exp[absorp/dlen length1];\\
+ListLinePlot[Thread[\{mag, finalcir\}]]\\
+Export["CircularAbsorption45.dat", finalcir, "Table"]\\
+P2 = 1 Exp[63.9 $10^3$/8.314 (1/418 - 1/294)];\\
+kB = 1.38 $10^-{23}$\\
+n = P2/kB/294/$10^6$ \\
+
+\section{Transmission curve for Cesium}
+
+\textless\textless AtomicDensityMatrix\`;\\
+dlen = .1 (* cm*);\\
+powerinc = 10 $10^{-6}$;\\
+a = 1.5 $10^{-3}$;\\
+Intens = 2 powerinc /($\pi a^2$ )/10 ;\\
+hh = 6.626*$10^{34}$\\
+speed = 3*$10^{8}$;\\
+$\lambda$1 = 852 $10^{-9}$;\\
+Isat = $\pi$*hh*speed/3/$\lambda_1^3$*33*$10^{6}$/10;\\
+IbyIsat = Intens/Isat;\\
+SetOptions[DensityMatrix, TimeDependence -\textgreater False, \\
+  ComplexExpandVariables -\textgreater Subscript];\\
+SetOptions[ListLinePlot, PlotRange -\textgreater All, ImageSize -\textgreater Medium, \\
+  Frame -\textgreater True];\\
+\{gstate, estate\} = AtomicTransition["Cs", "D2"];\\
+\{gQuantumNumbers, \\
+   eQuantumNumbers\} = \{AtomicData[\\
+    gstate, \{J, L, S, NuclearSpin, NaturalWidth, Energy\}],\\
+   AtomicData[estate, \{J, L, S, NuclearSpin\}]\};\\
+system = Sublevels\@\{\\
+    AtomicState[1, gQuantumNumbers], \\
+    AtomicState[2, Append[eQuantumNumbers, BranchingRatio[1] -\textgreater 1]]\\
+    \};\\
+Style[TableForm[\\
+   system = DeleteStates[system, StateLabel == 2 \&\& F == 3]], Small];\\
+Style[TableForm[\\
+   system = DeleteStates[system, StateLabel == 2 \&\& F == 4]], Small];\\
+Style[TableForm[\\
+   system = DeleteStates[system, StateLabel == 2 \&\& F == 2]],\\
+  Small];\\
+atomicData = Join[\\
+   AtomicData[gstate, StateLabel -\textgreater 1],\\
+   AtomicData[estate, \\
+    StateLabel -\textgreater 2], \{c -\textgreater SpeedOfLight, hbar -\textgreater \\
+     PlanckConstantReduced, $\epsilon_0$ -\textgreater VacuumPermittivity\}\\
+   ];\\
+expsyst = \{\\
+   Region[a, TransitRate[b] -\textgreater $\gamma$a, \\
+    TransitRate[VoidRegion] -\textgreater 0, Density -\textgreater 1, \\
+    OpticalParameters -\textgreater \{Energy[2]\\
+         + $\Delta$ , $\Omega_R$/\\
+       ReducedME[1, \{Dipole, 1\}, 2]\}],\\
+   Region[b, TransitRate[a] -\textgreater $\gamma$b, \\
+    TransitRate[VoidRegion] -\textgreater $\gamma$w, Density -\textgreater 1, \\
+    OpticalParameters -\textgreater \{Energy[2], 0\}]\\
+   \};\\
+Style[MatrixForm /\@ (H = Hamiltonian[system, expsyst]), Small];\\
+MatrixForm /\@ (hrwa = RotatingWaveApproximation[system, expsyst, H]);\\
+MatrixForm /\@ (relax = Relaxation[system, expsyst]);\\
+Short[repop = Repopulation[system, expsyst], 10];\\
+eqs = Flatten\@ LiouvilleEquation[system, expsyst, hrwa, relax, repop];\\
+vars45 = DMVariables[system, expsyst];\\
+observables = \\
+Observables[system, \\
+    Energy[2], $\Omega_R$/ReducedME[1, \{Dipole, 1\}, 2], \\
+    DMLabel -\textgreater a] // Together;\\
+dADM = ExpandDipoleRME[system, ReducedME[1, \{Dipole, 1\}, 2]];\\
+dSI = Convert[\\
+dADM Sqrt[ $hc^3$] Sqrt[4 $\pi\epsilon_0$] /. atomicData, \\
+   Coulomb Meter];\\
+E0 = Convert[\\
+   Sqrt[2 Int ($Milli Watt/Centimeter^2$)/(c $\epsilon_0$)] /. \\
+     atomicData // N, Volt/Meter];\\
+rabi = $\Omega_R$ -\textgreater \\
+   Convert[E0 dSI/hbar /. atomicData, 1/Second];\\
+observables1 = \\
+  Convert[\#, \\
+     1] \& /\@ (observables[[All, \\
+        1]] $c^2$ length (Centimeter) density (1/$Centimeter^3$) /. \\
+      atomicData /. rabi);\\
+Short[eqs45 = \\
+   eqs /. rabi /. atomicData /. \{Mega -\textgreater $10^{-6}$, Second -\textgreater 1\}, 50];\\
+arrays45[params\_] :=\{\\
+  \{1, -1\} Reverse@CoefficientArrays[eqs45 /. params, vars45], \\
+  CoefficientArrays[observables1 /. params, vars45][[2]]\\
+  \} \\
+SetOptions[DensityMatrix, TimeDependence -\textgreater False, \\
+  ComplexExpandVariables -\textgreater Subscript];\\
+SetOptions[ListLinePlot, PlotRange -\textgreater All, ImageSize -\textgreater Medium, \\
+  Frame -\textgreater True];\\
+\{gstate, estate\} = AtomicTransition["Cs", "D2"];\\
+\{gQuantumNumbers, \\
+   eQuantumNumbers\} = {AtomicData[\\
+    gstate, \{J, L, S, NuclearSpin, NaturalWidth, Energy\}],\\
+   AtomicData[estate, \{J, L, S, NuclearSpin\}]\};\\
+system = Sublevels\@\{\\
+    AtomicState[1, gQuantumNumbers], \\
+    AtomicState[2, Append[eQuantumNumbers, BranchingRatio[1] -\textgreater 1]]\\
+    \};\\
+Style[TableForm[\\
+   system = DeleteStates[system, StateLabel == 2 \&\& F == 3]], Small];\\
+Style[TableForm[\\
+   system = DeleteStates[system, StateLabel == 2 \&\& F == 5]], Small];\\
+Style[TableForm[\\
+   system = DeleteStates[system, StateLabel == 2 \&\& F == 2]],\\
+  Small];\\
+atomicData = Join[\\
+   AtomicData[gstate, StateLabel -\textgreater 1],\\
+   AtomicData[estate, \\
+    StateLabel -\textgreater 2], \{c -\textgreater SpeedOfLight, hbar -\textgreater \\
+     PlanckConstantReduced, $\epsilon_0$ -\textgreater VacuumPermittivity\}\\
+   ];\\
+expsyst = \{\\
+   Region[a, TransitRate[b] -\textgreater $\gamma$a, \\
+    TransitRate[VoidRegion] -\textgreater 0, Density -\textgreater 1, \\
+    OpticalParameters -\textgreater \{Energy[\\
+        2] + $\Delta$, $\Omega_R$/\\
+       ReducedME[1, \{Dipole, 1\}, 2]}],\\
+   Region[b, TransitRate[a] -\textgreater $\gamma$b, \\
+    TransitRate[VoidRegion] -\textgreater $\gamma$w, Density -\textgreater 1, \\
+    OpticalParameters -\textgreater \{Energy[2], 0\}]\\
+   \};\\
+Style[MatrixForm /\@ (H = Hamiltonian[system, expsyst]), Small];\\
+
+MatrixForm /\@ (hrwa = RotatingWaveApproximation[system, expsyst, H]);\\
+MatrixForm /\@ (relax = Relaxation[system, expsyst]);\\
+Short[repop = Repopulation[system, expsyst], 10];\\
+
+eqs = Flatten\@ LiouvilleEquation[system, expsyst, hrwa, relax, repop];\\
+
+vars44 = DMVariables[system, expsyst];\\
+
+observables44a = \\
+  Observables[system, \\
+    Energy[2], $\Omega_R$/ReducedME[1, \{Dipole, 1\}, 2], \\
+    DMLabel -\textgreater a] // Together;\\
+dADM = ExpandDipoleRME[system, ReducedME[1, \{Dipole, 1\}, 2]];\\
+dSI = Convert[\\
+   dADM Sqrt[ $ hc^3$ ] Sqrt[4 $\pi\epsilon_0$] /. atomicData, \\
+   Coulomb Meter];\\
+E0 = Convert[\\
+   Sqrt[2 Int (Milli Watt/$Centimeter^2$)/(c $epsilon_0$)] /. \\
+     atomicData // N, Volt/Meter];\\
+rabi = $\Omega_R$ -\textgreater \\
+   Convert[E0 dSI/hbar /. atomicData, 1/Second];\\
+observables44 = \\
+  Convert[\#, \\
+     1] \& /\@ (observables44a[[All, \\
+        1]] $c^2$ length (Centimeter) density (1/$Centimeter^3$) /. \\
+      atomicData /. rabi);\\
+Short[eqs44 = \\
+   eqs /. rabi /. atomicData /. {Mega -\textgreater $10^{6}$, Second -\textgreater 1}, 50];\\
+arrays44[params\_] := \{\\
+  \{1, -1\} Reverse@CoefficientArrays[eqs44 /. params, vars44], \\
+  CoefficientArrays[observables44 /. params, vars44][[2]]\\
+  \}\\
+
+
+
+SetOptions[DensityMatrix, TimeDependence -\textgreater False, \\
+  ComplexExpandVariables -\textgreater Subscript];\\
+SetOptions[ListLinePlot, PlotRange -\textgreater All, ImageSize -\textgreater Medium, \\
+  Frame -\textgreater True];\\
+\{gstate, estate\} = AtomicTransition["Cs", "D2"];\\
+\{gQuantumNumbers, \\
+   eQuantumNumbers\} = \{AtomicData[\\
+    gstate, \{J, L, S, NuclearSpin, NaturalWidth, Energy\}],\\
+   AtomicData[estate, {J, L, S, NuclearSpin\}]};\\
+system = Sublevels\@\{\\
+    AtomicState[1, gQuantumNumbers], \\
+    AtomicState[2, Append[eQuantumNumbers, BranchingRatio[1] -\textgreater 1]]\\
+    \};\\
+
+Style[TableForm[\\
+   system = DeleteStates[system, StateLabel == 2 \&\& F == 4]], Small];\\
+Style[TableForm[\\
+   system = DeleteStates[system, StateLabel == 2 \&\& F == 5]], Small];\\
+Style[TableForm[\\
+   system = DeleteStates[system, StateLabel == 2 \&\& F == 2]],\\
+  Small];\\
+atomicData = Join[\\
+   AtomicData[gstate, StateLabel -\textgreater 1],\\
+   AtomicData[estate, \\
+    StateLabel -\textgreater 2], {c -\textgreater SpeedOfLight, hbar -\textgreater \\
+     PlanckConstantReduced, $\epsilon_0$ -\textgreater VacuumPermittivity}\\
+   ];\\
+
+expsyst = {\\
+   Region[a, TransitRate[b] -\textgreater $\gamma$a, \\
+    TransitRate[VoidRegion] -\textgreater 0, Density -\textgreater 1, \\
+    OpticalParameters -\textgreater {Energy[\\
+        2] + $\Delta$, $\Omega_R$/ \\
+       ReducedME[1, {Dipole, 1}, 2]}],\\
+   Region[b, TransitRate[a] -\textgreater $\gamma$b, \\
+    TransitRate[VoidRegion] -\textgreater $\gamma$w, Density -\textgreater 1, \\
+    OpticalParameters -\textgreater {Energy[2], 0}]\\
+   };\\
+Style[MatrixForm /\@ (H = Hamiltonian[system, expsyst]), Small];\\
+MatrixForm /\@ (hrwa = RotatingWaveApproximation[system, expsyst, H]);\\
+MatrixForm /\@ (relax = Relaxation[system, expsyst]);\\
+Short[repop = Repopulation[system, expsyst], 10];\\
+eqs = Flatten@LiouvilleEquation[system, expsyst, hrwa, relax, repop];\\
+vars43 = DMVariables[system, expsyst];\\
+observables43a = \\
+  Observables[system,\\ 
+    Energy[2], $Omega_R$/ReducedME[1, \{Dipole, 1\}, 2], \\
+    DMLabel -\textgreater a] // Together;\\
+dADM = ExpandDipoleRME[system, ReducedME[1, \{Dipole, 1\}, 2]];\\
+dSI = Convert[\\
+   dADM Sqrt[hbar $c^3$] Sqrt[4 $\pi\epsilon_0$] /. atomicData, \\
+   Coulomb Meter];\\
+E0 = Convert[\\
+   Sqrt[2 Int (Milli Watt/$Centimeter^2$)/(c $\epsilon_0$)] /. \\
+     atomicData // N, Volt/Meter];\\
+rabi = $\Omega_R$ -\textgreater \\
+   Convert[E0 dSI/hbar /. atomicData, 1/Second];\\
+observables43 = \\
+  Convert[\#, \\
+     1] \& /\@ (observables43a[[All, \\
+        1]] $c^2$ length (Centimeter) density (1/$Centimeter^3$) /. \\
+      atomicData /. rabi);\\
+Short[eqs43 = \\
+   eqs /. rabi /. atomicData /. \{Mega -\textgreater $10^{6}$, Second -\textgreater 1\}, 50];\\
+arrays43[params\_] := \{\\
+  \{1, -1\} Reverse\@ CoefficientArrays[eqs43 /. params, vars43], \\
+  CoefficientArrays[observables43 /. params, vars43][[2]]\\
+  \}\\
+deltah45 = -3.757885799;\\
+$\lambda$1 = 852 $10^-9$;\\
+deltah44 = -4.008977889354;\\
+deltah43 = -4.210264899375;\\
+dens = 1 $10^10$;\\
+
+Dat = Import[\\
+
+T1 = 273 + 60.6;\\
+mul = 1;\\
+Ga = 3 $10^5$*mul; Gb = $1.1 10^3$*mul; Gw = 1 $10^11$;\\
+a1 = Dat[[2 ;;]][[All, 2]]; b1 = Dat[[2 ;;]][[All, 3]]; v1 = \\
+ Dat[[2 ;;]][[All, 1]]; a2 = (a1 - 0.6068)/(0.2414 - 0.6068) - \\
+  0.011; df = v/$\lambda$1;\\
+params45 = \{Int -\textgreater Intens(* mW/\\
+   $cm^2$ *), $\gamma$a -\textgreater Ga, $\gamma$b -\textgreater Gb, $\gamma$w -\textgreater Gw, \\
+   length -\textgreater dlen (* \\
+   cm *), $\Delta$ -\textgreater ((2 $\pi$ (deltah45) $10^{9}$) + (2 $\pi$ \ \\
+(delta2)) $10^6$) (* GHz *), density -\textgreater dens\};\\
+\{eqarr45, obsarr45\} = arrays45[params45];\\
+tab = Table[\{delta2, obsarr45.LinearSolve @@ eqarr45\}, \{delta2, -35.0,\\
+     35.0, 1\}];\\
+abs45 = Total[tab[[All, 2]][[All, 1]]]*1 $10^6$;\\
+params44 = \{Int -\textgreater Intens(* mW/\\
+   $cm^2$ *), $\gamma$a -\textgreater Ga, $\gamma$b -\textgreater Gb, $\gamma$w -\textgreater Gw, \\
+   length -\textgreater dlen (* \\
+   cm *), $\Delta$ -\textgreater ((2 $\pi$ (deltah44) $10^9$) + (2 $\pi$\\
+(delta2)) $10^6$) (* GHz *), density -\textgreater dens\};\\
+\{eqarr44, obsarr44\} = arrays44[params44];\\
+tab = Table[\{delta2, obsarr44.LinearSolve @@ eqarr44\}, \{delta2, -35.0,\\
+     35.0, 1\}];\\
+abs44 = Total[tab[[All, 2]][[All, 1]]]*1 $10^{6}$;\\
+params43 = \{Int -\textgreater Intens(* mW/\\
+   $cm^2$ *), $\gamma$a -\textgreater Ga, $\gamma$b -\textgreater Gb, $\gamma$w -\textgreater Gw, \\
+   length -\textgreater dlen (* \\
+   cm *), $\Delta$ -\textgreater ((2 $\pi$ (deltah43) $10^{9}$) + (2 $\pi$ \\
+(delta2)) $10^6$) (* GHz *), density -\textgreater dens\};\\
+{eqarr43, obsarr43} = arrays43[params43];\\
+tab = Table[\{delta2, obsarr43.LinearSolve @@ eqarr43\}, \{delta2, -35.0,\\
+     35.0, 1\}];\\
+abs43 = Total[tab[[All, 2]][[All, 1]]]*1 $10^{6}$;\\
+
+
+m = .133; R = 8.314;\\
+$\sigma$ = Sqrt[R T1/m];\\
+v = Range[-800, 800, 5];\\
+$\lambda 1$ = 852 $10^{-9}$;\\
+absorp = v 0;\\
+offset44 = (deltah44 - deltah45)* $10^{9}$*$\lambda 1$;\\
+offset43 = (deltah43 - deltah45)* $10^{9}$*$\lambda 1$;\\
+For[k1 = 1, k1 \textless= Length[v], k1++,\\
+ absorp[[k1]] = \\
+   abs45*$\lambda 1$/(Sqrt[\\
+         2 $\pi$] $\sigma$) Exp[-v[[k1]]$^2$/$\sigma^2$/2] + \\
+    abs44*$\lambda 1$/(Sqrt[\\
+         2$\pi$] $\sigma$) Exp[-(v[[k1]] - offset44)$^2$/$\sigma^2$/ \\
+       2] + abs43*$\lambda 1$/(Sqrt[\\
+         2 $\pi$] $\sigma$) Exp[-(v[[k1]] - offset43)$^2$/$\sigma^2$/2];\\
+ ]
+length1 = 2.5*11.3; \\
+finallin = Exp[absorp/dlen length1];\\
+f1 = v1/(6.98 - 5.52)*(deltah45 - deltah43)*$10^{9}$ - 2.16*$10^{9}$;\\
+Result = ListLinePlot[\{Thread[\{f1/$10^{9}$, a2\}], \\
+   Thread[\{df/$10^{6}$, finallin\}], \\
+   Thread[\{f1/$10^{6}$, 10*(a1 - b1) + .75\}]\}, \\
+  PlotLegends -\textgreater \\
+   Placed[\{"Experiment", "Theory", "Satabs"\}, \{0.85, 0.5\}], \\
+  FrameLabel -\textgreater \{"Detuning (MHz)", "Relative Transmission"\}, \\
+  Axes -\textgreater False, PlotLabel -\textgreater "$F=4$ to $F'$ Transmission spectrum"]\\
+
+Export["Experiment.dat", Thread[\{f1/$10^{9}$, a2\}], "Table"]\\
+Export["Satabs.dat", Thread[\{f1/$10^{6}$, 10*(a1 - b1) + .75\}], "Table"]\\
+Export["Theory.dat", Thread[\{N[df/$10^{6}$], finallin\}], "Table"]\\
+
+
+% Bibliography or References
+
+\begin{thebibliography}{99}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[Allen75]{ALE75}
+L.~Allen and J.~H. Eberly.
+\newblock Optical resonance and two-level atoms.
+\newblock \emph{Dover publications}, 1975.
+
+\bibitem[Balabas10]{BKL10}
+M.~V. Balabas, T.~Karaulanov, M.~P. Ledbetter, and D.~Budker.
+\newblock Polarized alkali-metal vapor with minute-long transverse
+  spin-relaxation time.
+\newblock \emph{Phys. Rev. Letter}, 105:p. 070801, Nov 2010.
+\newblock \doi{10.1103/PhysRevLett.105.070801}.
+
+\bibitem[Bharti15]{BHN15}
+V.~Bharti and V.~Natarajan.
+\newblock Study of a four-level system in vee + ladder configuration.
+\newblock \emph{Optics Communications}, 356:pp. 510 -- 514, 2015.
+\newblock ISSN 0030-4018.
+\newblock \doi{http://dx.doi.org/10.1016/j.optcom.2015.08.042}.
+
+\bibitem[Budker02]{BGK02}
+D.~Budker, W.~Gawlik, D.~F. Kimball, S.~M. Rochester, V.~V. Yashchuk, and
+  A.~Weis.
+\newblock Resonant nonlinear magneto-optical effects in atoms.
+\newblock \emph{Rev. Mod. Phys.}, 74:pp. 1153--1201, Nov 2002.
+\newblock \doi{10.1103/RevModPhys.74.1153}.
+
+\bibitem[Chanu11]{CSB11}
+S.~R. Chanu, A.~K. Singh, B.~Brun, K.~Pandey, and V.~Natarajan.
+\newblock Subnatural linewidth in a strongly-driven degenerate two-level
+  system.
+\newblock \emph{Opt. Commun.}, 284(20):pp. 4957 -- 4960, 2011.
+\newblock ISSN 0030-4018.
+\newblock \doi{DOI: 10.1016/j.optcom.2011.07.001}.
+
+\bibitem[Chanu13]{CHN13}
+S.~R.~Chanu and V.~Natarajan.
+\newblock {Narrowing of resonances in electromagnetically induced transparency
+  and absorption using a Laguerre-Gaussian control beam}.
+\newblock \emph{Opt. Commun.}, 295(0):pp. 150--154, 2013.
+\newblock ISSN 0030-4018.
+\newblock \doi{10.1016/j.optcom.2013.01.042}.
+
+\bibitem[Chanu14]{CPB14}
+S.~R.~Chanu, K.~Pandey, V.~Bharti, A.~Wasan, and V.~Natarajan. 
+\newblock Polarization-rotation resonances with subnatural widths using a control laser.
+\newblock \emph{Europhys. Lett.}, 106(4):p. 43001, 2014.
+
+\bibitem[Chin01]{CLV01}
+C.~Chin, V.~Leiber, V.~Vuleti\ifmmode~\acute{c}\else \'{c}\fi{}, A.~J. Kerman,
+  and S.~Chu.
+\newblock Measurement of an electron's electric dipole moment using cs atoms
+  trapped in optical lattices.
+\newblock \emph{Phys. Rev. A}, 63:p. 033401, Feb 2001.
+\newblock \doi{10.1103/PhysRevA.63.033401}.
+
+\bibitem[Collaboration14]{ACME14}
+T.~A. Collaboration, J.~Baron, W.~C. Campbell, D.~DeMille, J.~M. Doyle,
+  G.~Gabrielse, Y.~V. Gurevich, P.~W. Hess, N.~R. Hutzler, E.~Kirilov,
+  I.~Kozyryev, B.~R. O’Leary, C.~D. Panda, M.~F. Parsons, E.~S. Petrik,
+  B.~Spaun, A.~C. Vutha, and A.~D. West.
+\newblock Order of magnitude smaller limit on the electric dipole moment of the
+  electron.
+\newblock \emph{Science}, 343(6168):pp. 269--272, 2014.
+\newblock \doi{10.1126/science.1248213}.
+
+\bibitem[Foot05]{FOO05}
+C.~J. Foot.
+\newblock Atomic physics.
+\newblock \emph{Oxford university press}, 2005.
+
+\bibitem[Hudson11]{HKS11}
+J.~J. Hudson, D.~M. Kara, I.~J. Smallman, B.~E. Sauer, M.~R. Tarbutt, and E.~A.
+  Hinds.
+\newblock {Improved measurement of the shape of the electron}.
+\newblock \emph{Nature}, 473(7348):pp. 493--496, 2011.
+\newblock ISSN 0028-0836.
+\newblock \doi{10.1038/nature10104}.
+
+\bibitem[Iftiquar09]{IFN09}
+S.~M. Iftiquar and V.~Natarajan.
+\newblock Line narrowing of electromagnetically induced transparency in {Rb}
+  with a longitudinal magnetic field.
+\newblock \emph{Phys. Rev. A}, 79(1):p. 013808, Jan 2009.
+\newblock \doi{10.1103/PhysRevA.79.013808}.
+
+\bibitem[Landau57]{LAN57}
+L.~D. Landau.
+\newblock \emph{Sov. Phys. JETP}, 5:p. 366, 1957.
+
+\bibitem[Metcalf99]{MES99}
+H.~J. Metcalf and P.~van~der Stratten.
+\newblock Laser cooling and trapping.
+\newblock \emph{Springer}, 1999.
+
+\bibitem[Nataraj08]{NSD08}
+H.~S. Nataraj, B.~K. Sahoo, B.~P. Das, and D.~Mukherjee.
+\newblock Intrinsic electric dipole moments of paramagnetic atoms: Rubidium and
+  cesium.
+\newblock \emph{Phys. Rev. Lett.}, 101:p. 033002, Jul 2008.
+\newblock \doi{10.1103/PhysRevLett.101.033002}.
+
+\bibitem[Purcell50]{PUR50}
+E.~M. Purcell and N.~F. Ramsey.
+\newblock On the possibility of electric dipole moments for elementary
+  particles and nuclei.
+\newblock \emph{Phys. Rev.}, 78:pp. 807--807, Jun 1950.
+\newblock \doi{10.1103/PhysRev.78.807}.
+
+\bibitem[Rafac98]{RTC98}
+R.~J. Rafac and C.~E. Tanner.
+\newblock Measurement of the ratio of the cesium $d$-line transition strengths.
+\newblock \emph{Phys. Rev. A}, 58:pp. 1087--1097, Aug 1998.
+\newblock \doi{10.1103/PhysRevA.58.1087}.
+
+\bibitem[Ravi16]{HMA16}
+H.~Ravi, M.~Bhattrai, Y.~D. Abhilash, M.~Ummal, and V.~Natarajan.
+\newblock Permanent edm measurement in cs using nonlinear magneto-optic
+  rotation.
+\newblock \emph{Asian Journal of Physics}, 25, September 2016.
+
+\bibitem[Ravishankar11]{RCN11}
+H.~Ravishankar, S.~R. Chanu, and V.~Natarajan.
+\newblock Chopped nonlinear magneto-optic rotation: A technique for precision
+  measurements.
+\newblock \emph{Europhys. Lett.}, 94(5):p. 53002, 2011.
+
+\bibitem[Regan02]{RCS02}
+B.~C. Regan, E.~D. Commins, C.~J. Schmidt, and D.~DeMille.
+\newblock New limit on the electron electric dipole moment.
+\newblock \emph{Phys. Rev. Lett.}, 88:p. 071805, Feb 2002.
+\newblock \doi{10.1103/PhysRevLett.88.071805}.
+
+\bibitem[Sandars64]{SAL64}
+P.~G.~H. Sandars and E.~Lipworth.
+\newblock Electric dipole moment of the cesium atom. a new upper limit to the
+  electric dipole moment of the free electron.
+\newblock \emph{Phys. Rev. Lett.}, 13:pp. 718--720, Dec 1964.
+\newblock \doi{10.1103/PhysRevLett.13.718}.
+
+\bibitem[Schiff63]{SCH63}
+L.~I. Schiff.
+\newblock Measurability of nuclear electric dipole moments.
+\newblock \emph{Phys. Rev.}, 132:pp. 2194--2200, Dec 1963.
+\newblock \doi{10.1103/PhysRev.132.2194}.
+
+\bibitem[Steck03]{STE03}
+D.~A. Steck.
+\newblock {Cesium D line data, http://steck.us/alkalidata/}.
+\newblock 2003.
+
+\bibitem[Tarbutt13]{TSH13}
+M.~R. Tarbutt, B.~E. Sauer, J.~J. Hudson, and E.~A. Hinds.
+\newblock Design for a fountain of ybf molecules to measure the electron's
+  electric dipole moment.
+\newblock \emph{New J. Phys.}, 15(5):p. 053034, 2013.
+
+\end{thebibliography}
+
+\end{document}
