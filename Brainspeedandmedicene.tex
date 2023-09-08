@@ -1,0 +1,122 @@
+\documentclass[a4paper]{article}
+
+%% Language and font encodings
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+
+%% Sets page size and margins
+\usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+%% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+\title{ IQ, stamina and neuro medicene}
+\author{Harish Ravi}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Medications change neural network speed and threshold by establishing a sodium potassium blockade and also affecting some harmones. Speed=s, threshold=t, memory=m, aluunits=n, N operations of complexity x. Sometimes, depending on the problem and stage you might have to just take a calming agent like melatonin or drink a stimulant like caffine. This paper prescribes how to deal with disorders, projects etc based on other factors in the human. Epilepsy or fits arises due to high speeds and instabilities just like a processor running in overdrive. Mania arises due to a problem in the decision making tree ( when the if else conditions aren't evaluated properly) this comes due a change in the threshold conditions. If the neural speeds and thresholds are held constant it can be trained rapidly with exposure to black and white movie videos which are more realtime and slow.
+
+How do we keep the person useful to the society by making the patient work to give feedback and profits to the company he works for, is the question. In this day with the advent of cellphones and higher connectivity, regular connection with the doctor and a higher variation in medication might keep the person more functional ie a better worker, law abiding and prone to lesser errors which lead to lesser fines and ill investment. While this is pharmacological, the psychologist might have to do some ground work by speaking to the patient and his surroundings.
+
+$$time=(N*mtotal/mrelevant*x/n)*t/s$$
+
+Intelligence quotient is proportional to 1/time.
+
+\end{abstract}
+
+\section{Intro}
+
+speedofbrain=120/0.1;
+speedofmuscle=40/0.2;
+threshold=0.7;
+we can remember $10^6$ pictures , $10^6$ audio sentances, $10^6$ tastes smells, touches
+mem=1000000e6;  A million MB or a tera byte
+Alu=10e8;
+relavantmemory=100e6;
+complexity=100;
+
+intelligence=Percentageofcorrectdecisions/time
+
+bloodlevel=50; ug/ml
+
+speedofbrain=s0-deltaS*bloodlevel
+threshold=t0+deltat*bloodlevel
+
+It also affects the number of push ups a guy can do, the speed at which  a person can run etc. Thus a high dosage of depakote would increase the thresholds but reduce speed very much leading to lesser IQ. A very low dosage would lead to higher faulty decisions and a manic situation and less IQ. A sweet spot is dependent on the patient weight and past exposure to life and present exposure. The physical stamina would also be lower because the muscle needs higher rep rate and stable feedback. High dosage means lower rep rate or lesser weightbearing ability. Low dosage means incoherent behaviour between adjescent neurons. \textbf{Thus, medication reduces stamina and intelligence}.
+
+stamina=reprate*coherenceinfeedbackbetweenadjescentmuscles
+
+ 
+
+\begin{figure}
+\centering
+\includegraphics[width=0.7\columnwidth]{brain.png}
+\caption{\label{fig:Lorenz}Intellignence and depakote blood level (theory)}
+\end{figure}
+
+import matplotlib.pyplot as plt\\
+import numpy as np\\
+speedofbrain=120/0.1;\\
+speedtolocomotion=40/0.4;\\
+threshold1=0.7;\\
+deltathreshold=0.1;\\
+bl=np.arange(5,150,5);\\
+deltaS=200;\\
+bloodlevel=bl/50;\\
+threshold=threshold1+deltathreshold*bloodlevel;\\
+speed=speedofbrain-deltaS*bloodlevel;\\
+Ngenerations=4096;\\
+
+imagine a binary tree firing voltagee 0.7 plus noise, next neuron firing probability is relativethreshold\\
+n operations\\
+
+prob=np.power((threshold1/threshold),12)\\
+intelligence=prob*speed\\
+prob2=1-np.power((threshold/threshold1),12)\\
+intelligence=prob*speed\\
+
+plt.plot(bl,intelligence)\\
+plt.ylabel('Intelligence')\\
+plt.xlabel('Blood level (uG/ml)')\\
+plt.show()\\
+
+If upon dosing with 50 uG/ml if the intelligence level is half, then if the medication is suddenly halved,
+you would expect the intelligence to go up. On the contrary, because the brain is tuned to higher thresholds, there will be epilliptic thinking with own loops where the patient makes up his own stories about the situation and comes up to crazy conclusions. This means the IQ sporadically drops down especially while eating etc. Even if the patient is exposed to caffine which reduces the thresholds and increases speed, the same would happen. One may be able to reach higher levels of learning but hitting the right conclusions would be harder. One can't perform better if one goes on caffine. Thus tapering off medicene is a slow process where one tapers by steps of say 25 percent and then learns and lives in a normal fasion able to maintain basic hygine over a period of a week, eat enough to get consistent energy and go perform well at the job real time, maintain basic courtesies of a relation and not tread on the other. This relearning of basics and real life stuff will take about a few months before going to the next stage and so on. Going near the final stages will be very difficult because small changes in concentration result in big changes in decision making patterns. Will the addition of another drug cause a change to help taper we are not sure. Every drug has its charecteristic half life and mechanism of action by changning thresholds, speeds and neural spikes. Oleanz decreases IQ more drastically slowing down and increasing threshold more. It also affects the harmonal balances of dopamine etc which means the reward centres, pleasure centers light up less. Different schedule H drugs act on neurons or on the neuro harmonal systems. Harmonal systems act by activating by catalysis the synapses which means they act more exponentially as when compared to neural medicenes. Thus these neural medicenes calm the person for basic living and staying at home when a care giver is there. However, to make them able enough to work is difficult. One would have to try the same problem repeatedly and also remember to try again over the next day. To taper off when all situations are calm, one can do it when away from family to keep relations secure. Neuroplasticity gives hope provided one relearns by watching movies and travelling before joining a job. The blood level for depakote with half life is given by
+$$Bloodlevel=Dosagemg/(Weightkg*0.068)*(1+thalfhrs/24*(1-exp(24/thalfhrs))$$
+
+The base of the question is how does a man differ from another man when it comes to decision making and speed? It just comes from travel, exposure and education. If one is not behaving well according to circumstance they are subject to medication. However, with travel and enough exposure to experiences through discussions and audio visuals, one may switch to natural healing long term :)
+
+To diagnose disorders based amount of speech (S) and eye contact (E) on a scale of 0 to 1, 1- the intersection gives anxiety if hez talking to someone he doesn't know or not properly to the stature, 1-union means hez talking and interacting too less means psychosis, 1-special bayes of eyecontact by talking gives bipolar and 1- special bayes of talking by eyecontact means obsessive compulsive disorder.
+
+Bipolar $1-(P(E)+P(S)-P(E)P(S))/P(S))$
+OCD $1-(P(E)+P(S)-P(E)P(S))/P(E))$
+Anxiety $1-P(E)P(S)$ 
+Toy fear or psychosis $1-(P(E)+P(S)-P(E)P(S))$ bingo
+
+Future work based on me reading cases or books would be to recommend medicee dosage based on these umbers
+
+\section{Speaking double sentences and imagination}
+
+When the brain has different areas, if the speech originates from ideas in one area and a delayed area, the person speaks out two sentences with what one means to communicate and something more sutle and personal and this allows communication of more personal and other things which involve some shame. One needs to read a lot and practice the art of talking to someone else while reading a scripture aloud. I have seen several people with a very controlled second layer of speech. Several songs these days also have this method of communication after you purchase it when the real singer sits behind the mic and delivers some fun. There is also the chance of using artificial intelligence to speak in repeat when there is a digital song.
+
+\section{Tapering}
+When we intially reduce the medicene gradually, the change in intelligence won't be much and the body will adjust relatively soon in maybe 3 months. It takes 3 months for memory and relearning to happen from LKG to PhD level. Thus, it might be benificial to do an exponential tapering lasting 4 years after which the patient can reap full benifts, work in a job and even donate blood. Basically, he needs to avoide caffine at all costs.
+
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\columnwidth]{Tapering.png}
+	\caption{\label{fig:Lorenz}How do tapering with pill with a weekly average of 125mg tablets (theory)}
+\end{figure}
+
+\section{vitamins and minerals}
+Vitamin C plays an active role in the krebs cycle and thus, provides the oil required to the firewood to get the ATP burning glucose. The citric acid is also recycled. High amounts of this will lead to excess excretion and thus deficiency. Consuming about half a tablet once in two weeks is recommended. We do get the required citric acid from fruits, tomato etc in diet. Vitamin B burns proteins and fats and this leads to a leaner body. Both of these provide more energy for the pumps which means higher aleartness and accuracy in desired response. The thresholds and speed of conduction also don't change much but the repeatability and energy to do more computations increase leading to increased IQ and stamina. Fat soluble vitamins like A are required in vision and also they have vision cycles involving rhodopsin with a photon sensitive molecule. Other vitamins and minerals form a major role in the formation of various enzymes in the body.
+
+\end{document}
