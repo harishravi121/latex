@@ -20,6 +20,8 @@ a15="₿₿\\alpha x^2 +\\beta y^3₿₿"
 a16="million₿million₿\\alpha x^2 +\\beta y^3million₿million₿"
 
 #The richest being million bitcoin. Changing and randomly typing equations daily can make one rich.
+
+#You need to type 50-100 equations for phd with that reward and really see and 500 for prof or dir.
 import pyperclip as pc
 b=a15.replace('₿','$')
 print(a15)
