@@ -3,6 +3,7 @@ a2="annaanna\\alpha x^2 +\\beta y^3annaanna"
 
 a3="₹₹S=ut+1/2at^2₹₹"
 a5="ramram v=t^3+13+f_9ramram"
+a881="jesusjesus v=t^3+13+f_9jesusjesus"
 gyro="₹₹d_E=2g_F\\mu_B/2\\eta E \\Delta C₹₹"
 gyro2="paisapaisad_E=(0.3\\pm1.3)\\times 10^{-22}e-cmpaisapaisa"
 a7="HarishHarish S=29+di_{10}+g^5\\betaHarishHarish"
@@ -15,9 +16,13 @@ a11="lakh₹lakh₹F^{\\mu\\nu}F_{\\mu\\nu}=0lakh₹lakh₹"
 a12="crore₹crore₹H ket{\\psi}=E ket{\\psi}crore₹crore₹"
 gluc="billion$billion$C_6H_{12}O_6billion$billion$"
 gluc22="billion$billion$(s_0-\\lambda D)(t_0+\\lambda D)^12billion$billion$"
+a15="₿₿\\alpha x^2 +\\beta y^3₿₿"
+a16="million₿million₿\\alpha x^2 +\\beta y^3million₿million₿"
+
+#The richest being million bitcoin. Changing and randomly typing equations daily can make one rich.
 import pyperclip as pc
-b=gluc22.replace('billion$','$')
-print(gluc22)
+b=a15.replace('₿','$')
+print(a15)
 print(b)
 pc.copy(b)
 
