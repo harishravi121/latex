@@ -21,11 +21,11 @@ a16="million₿million₿\\alpha x^2 +\\beta y^3million₿million₿"
 
 #The richest being million bitcoin. Changing and randomly typing equations daily can make one rich.
 
-#You need to type 50-100 equations for phd with that reward and really see and 500 for prof or dir.
+#You need to type 50-100 equations for phd with that reward and really see and 500 for prof or dir. We need better python code parse entire tex currency code. I am doing as I have time.
 import pyperclip as pc
 b=a15.replace('₿','$')
 print(a15)
 print(b)
 pc.copy(b)
-
+#You can either paste in texmaker for pdf or online equation editors.. 
 #A code to write any reward and add to the latex equation.. Must be done in 35s or 40s if you don't have job. Who knows what risk is.. lol its funny.
